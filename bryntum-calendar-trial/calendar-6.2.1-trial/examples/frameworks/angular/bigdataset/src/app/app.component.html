@@ -1,0 +1,14 @@
+<!-- BryntumDemoHeader component is used for Bryntum example styling only and can be removed -->
+<bryntum-demo-header></bryntum-demo-header>
+
+<bryntum-calendar
+    [date] = "calendarProps.date"
+    [weekExpanderFeature] = "calendarProps.weekExpanderFeature"
+    [eventEditFeature] = "calendarProps.eventEditFeature"
+    [modeDefaults] = "calendarProps.modeDefaults"
+    [modes] = "calendarProps.modes"
+    [tbar] = "calendarProps.tbar"
+    [crudManager] = "calendarProps.crudManager"
+    [sidebar] = "calendarProps.sidebar"
+    (onActiveItemChange) = "onActiveItemChange($event)"
+></bryntum-calendar>

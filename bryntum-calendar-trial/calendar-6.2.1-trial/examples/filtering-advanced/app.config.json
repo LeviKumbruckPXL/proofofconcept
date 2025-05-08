@@ -1,0 +1,4 @@
+{
+  "title": "Multi-level Filtering demo",
+  "description": "This demo shows how to filter by multiple conditions, such as the task project and resources that a task is assigned to."
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DayPilot · POC (Pro-trial, handmatige switch)</title>
+
+  <link rel="stylesheet"
+        href="./daypilot-pro-javascript-trial-2025.2.6458/demo/themes/calendar_white.css">
+
+  <style>
+    html,body{height:100%;margin:0;font-family:system-ui,sans-serif;}
+    #toolbar{max-width:900px;margin:20px auto;text-align:center;}
+    #cal,#mon{max-width:900px;margin:0 auto 40px;height:600px;}
+    #mon{display:none;}              /* dag/week staat eerst in beeld   */
+    button{margin:0 4px;padding:6px 12px;border:1px solid #ccc;border-radius:4px;background:#f9f9f9;cursor:pointer;}
+    .active{background:#e0e0e0;}
+
+.toolbar-item a{
+  display:inline-block;
+  padding:6px 18px;
+  border:1px solid #d0d0d0;
+  border-radius:20px;
+  background:#f8f8f8;
+  color:#333;
+  font-size:.9rem;
+  text-decoration:none;
+  transition:background .15s, border-color .15s, color .15s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.toolbar-item a:hover{
+  background:#ececec;
+  border-color:#c0c0c0;
+}
+.selected-button{
+  background:#3b82f6;
+  border-color:#3b82f6;
+  color:#fff;
+}
+body {
+    margin-top: 10px;
+}
+#nav {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+  </style>
+</head>
+<body>
+    <div style="display:flex">
+        <div>
+          <div id="nav"></div>
+        </div>
+        <div style="flex-grow: 1; margin-left: 10px;">
+          <div class="toolbar buttons">
+            <span class="toolbar-item"><a id="buttonDay" href="#">Day</a></span>
+            <span class="toolbar-item"><a id="buttonWeek" href="#">Week</a></span>
+            <span class="toolbar-item"><a id="buttonMonth" href="#">Month</a></span>
+          </div>
+          <div id="dpDay"></div>
+          <div id="dpWeek"></div>
+          <div id="dpMonth"></div>
+        </div>
+      </div>
+
+  <script src="./daypilot-pro-javascript-trial-2025.2.6458/scripts/daypilot-all.min.js"></script>
+  <script>
+    (async () => {
+    
+      /* events ophalen en omzetten naar DayPilot-structuur */
+      const raw = await (await fetch("events.json")).json();
+      const events = raw.map(e => ({
+        id    : e.id,
+        text  : e.title,      // DayPilot gebruikt "text"
+        start : e.start,
+        end   : e.end
+      }));
+    
+      /* date-picker */
+      const nav = new DayPilot.Navigator("nav", {
+        selectMode  : "Day",
+        showMonths  : 1,
+        skipMonths  : 1,
+        weekStarts  : 1
+      }).init();
+    
+      /* dagweergave */
+      const day = new DayPilot.Calendar("dpDay", {
+        viewType           : "Day",
+        durationBarVisible : false,
+        headerDateFormat   : "dddd dd/MM/yyyy",
+        events             : events,
+        weekStarts         : 1
+      }).init();
+    
+      /* weekweergave */
+      const week = new DayPilot.Calendar("dpWeek", {
+        viewType           : "Week",
+        durationBarVisible : false,
+        showCurrentTime    : true,
+        headerDateFormat   : "dddd dd/MM/yyyy",
+        weekStarts         : 1,
+        events             : events
+      }).init();
+    
+      /* maandweergave */
+      const month = new DayPilot.Month("dpMonth", {
+        startDate  : DayPilot.Date.today(),
+        weekStarts : 1,
+        events     : events
+      }).init();
+    
+      /* Switcher koppelt de knoppen aan de drie views */
+      new DayPilot.Switcher({
+        triggers : [
+          { id:"buttonDay",   view:day   },
+          { id:"buttonWeek",  view:week  },
+          { id:"buttonMonth", view:month }
+        ],
+        navigator     : nav,
+        selectedClass : "selected-button"
+      }).select("buttonWeek");      // start in weekview
+    
+    })();
+    </script>
+    
+  
+</body>
+</html>

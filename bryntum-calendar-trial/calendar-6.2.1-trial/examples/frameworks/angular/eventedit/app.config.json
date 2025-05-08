@@ -1,0 +1,23 @@
+{
+  "title": "Customized Event Editor (Angular)",
+  "description": "This example shows event editor customization.",
+  "source": [
+    "angular.json",
+    "package.json",
+    "src/app/app.component.html",
+    "src/app/app.component.scss",
+    "src/app/app.component.ts",
+    "src/app/app.config.ts",
+    "src/app/app.module.ts",
+    "src/assets/data/data.json",
+    "src/assets/data/rooms.json",
+    "src/index.html",
+    "src/lib/Room.ts",
+    "src/lib/RoomSelector.ts",
+    "src/main.ts",
+    "src/styles.scss",
+    "tsconfig.app.json",
+    "tsconfig.json",
+    "tsconfig.spec.json"
+  ]
+}

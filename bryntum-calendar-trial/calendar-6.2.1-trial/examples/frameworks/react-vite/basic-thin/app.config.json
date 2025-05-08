@@ -1,0 +1,15 @@
+{
+  "title": "Basic setup thin demo (React + Vite)",
+  "description": "This demo contains a basic thin React Calendar component implementation",
+  "source": [
+    "index.html",
+    "package.json",
+    "public/data/data.json",
+    "src/App.scss",
+    "src/App.tsx",
+    "src/AppConfig.tsx",
+    "src/main.tsx",
+    "tsconfig.json",
+    "vite.config.mts"
+  ]
+}

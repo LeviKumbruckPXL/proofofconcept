@@ -1,0 +1,5 @@
+{
+  "title": "Export Calendar to Excel",
+  "description": "This demo shows how to export Calendar events to Excel without involving the server based on a third party library called write-excel-file (https://www.npmjs.com/package/write-excel-file)",
+  "disableCodePen": true
+}

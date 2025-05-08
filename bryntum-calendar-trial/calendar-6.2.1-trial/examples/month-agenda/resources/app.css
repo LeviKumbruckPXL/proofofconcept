@@ -1,0 +1,31 @@
+@media (max-width: 500px){
+  [data-ref=todayButton]{
+    display:none;
+  }
+}
+.b-sidebar .b-checkbox{
+  margin-inline-start:0 !important;
+  font-size:88%;
+}
+
+@media (min-width: 600px){
+  #container{
+    display:grid;
+    grid-template-rows:auto minmax(90%, 1fr);
+    background-color:#999 !important;
+  }
+  .b-screenshot #container{
+    grid-template-rows:auto;
+  }
+  #container .b-calendar{
+    height:700px;
+    max-height:min(700px, 90%);
+    width:350px;
+    place-self:center;
+  }
+  #container .b-calendar{
+    border-radius:10px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

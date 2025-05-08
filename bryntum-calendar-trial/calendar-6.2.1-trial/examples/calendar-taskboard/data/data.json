@@ -1,0 +1,209 @@
+{
+  "success"   : true,
+  "resources" : {
+    "rows" : [
+      {
+        "id"         : 1,
+        "name"       : "Angelo",
+        "eventColor" : "blue",
+        "image"      : "angelo.jpg"
+      },
+      {
+        "id"         : 2,
+        "name"       : "Dave",
+        "eventColor" : "orange",
+        "image"      : "dave.jpg"
+      },
+      {
+        "id"         : 3,
+        "name"       : "Steve",
+        "eventColor" : "green",
+        "image"      : "steve.jpg"
+      },
+      {
+        "id"         : 4,
+        "name"       : "George",
+        "eventColor" : "blue",
+        "image"      : "george.jpg"
+      },
+      {
+        "id"         : 5,
+        "name"       : "Kate",
+        "eventColor" : "purple",
+        "image"      : "kate.jpg"
+      },
+      {
+        "id"         : 6,
+        "name"       : "Mark",
+        "eventColor" : "red",
+        "image"      : "mark.jpg"
+      }
+    ]
+  },
+  "tasks" : {
+    "rows" : [
+      {
+        "id"         : 1,
+        "name"       : "Sprint Planning Meeting",
+        "startDate"  : "2024-05-27T14:00:00",
+        "endDate"    : "2024-05-29T16:00:00",
+        "resourceId" : 1,
+        "status"     : "todo"
+      },
+      {
+        "id"         : 2,
+        "name"       : "Code Review",
+        "startDate"  : "2024-06-03T11:00:00",
+        "endDate"    : "2024-06-04T11:00:00",
+        "resourceId" : 2,
+        "status"     : "in-progress"
+      },
+      {
+        "id"         : 3,
+        "name"       : "Client Presentation",
+        "startDate"  : "2024-06-05T16:00:00",
+        "endDate"    : "2024-06-07T16:00:00",
+        "resourceId" : 3,
+        "status"     : "todo"
+      },
+      {
+        "id"         : 4,
+        "name"       : "System Testing",
+        "startDate"  : "2024-07-08T08:00:00",
+        "endDate"    : "2024-07-11T08:00:00",
+        "resourceId" : 4,
+        "status"     : "done"
+      },
+      {
+        "id"         : 5,
+        "name"       : "Bug Fixing",
+        "startDate"  : "2024-06-12T11:00:00",
+        "endDate"    : "2024-06-14T11:00:00",
+        "resourceId" : 1,
+        "status"     : "in-progress",
+        "label"      : "Prio 1"
+      },
+      {
+        "id"         : 6,
+        "name"       : "Team Standup",
+        "startDate"  : "2024-07-14T14:00:00",
+        "endDate"    : "2024-07-15T18:00:00",
+        "resourceId" : 2,
+        "status"     : "todo"
+      },
+      {
+        "id"         : 7,
+        "name"       : "Documentation",
+        "startDate"  : "2024-07-15T07:00:00",
+        "endDate"    : "2024-07-18T07:00:00",
+        "resourceId" : 3,
+        "status"     : "todo"
+      },
+      {
+        "id"         : 8,
+        "name"       : "Release Planning",
+        "startDate"  : "2024-06-16T17:00:00",
+        "endDate"    : "2024-06-19",
+        "resourceId" : 4,
+        "status"     : "in-progress"
+      },
+      {
+        "id"         : 9,
+        "name"       : "User Acceptance Testing",
+        "startDate"  : "2024-06-21T10:00:00",
+        "endDate"    : "2024-06-22T10:00:00",
+        "resourceId" : 1,
+        "status"     : "todo"
+      },
+      {
+        "id"         : 10,
+        "name"       : "Product Demo",
+        "startDate"  : "2024-07-24T13:00:00",
+        "endDate"    : "2024-07-25T16:00:00",
+        "resourceId" : 2,
+        "status"     : "done"
+      },
+      {
+        "id"         : 11,
+        "name"       : "Code Refactoring",
+        "startDate"  : "2024-06-26T08:00:00",
+        "endDate"    : "2024-06-28T08:00:00",
+        "resourceId" : 3,
+        "status"     : "in-progress"
+      },
+      {
+        "id"         : 12,
+        "name"       : "Client Feedback Session",
+        "startDate"  : "2024-07-28T09:00:00",
+        "endDate"    : "2024-07-29T11:00:00",
+        "resourceId" : 4,
+        "status"     : "todo"
+      },
+      {
+        "id"         : 13,
+        "name"       : "Security Audit",
+        "startDate"  : "2024-06-29T08:00:00",
+        "endDate"    : "2024-06-30T08:00:00",
+        "resourceId" : 1,
+        "status"     : "todo"
+      },
+      {
+        "id"         : 14,
+        "name"       : "Code Deployment",
+        "startDate"  : "2024-07-01T08:00:00",
+        "endDate"    : "2024-07-04T08:00:00",
+        "resourceId" : 2,
+        "status"     : "in-progress"
+      },
+      {
+        "id"         : 15,
+        "name"       : "Team Building Activity",
+        "startDate"  : "2024-08-05T10:00:00",
+        "endDate"    : "2024-08-07T10:00:00",
+        "resourceId" : 3,
+        "status"     : "todo"
+      },
+      {
+        "id"         : 16,
+        "name"       : "Client Onboarding",
+        "startDate"  : "2024-07-04T10:00:00",
+        "endDate"    : "2024-07-06T10:00:00",
+        "resourceId" : 4,
+        "status"     : "done"
+      },
+      {
+        "id"         : 17,
+        "name"       : "Code Review Session",
+        "startDate"  : "2024-07-07T11:00:00",
+        "endDate"    : "2024-07-08T11:00:00",
+        "resourceId" : 1,
+        "status"     : "in-progress"
+      },
+      {
+        "id"         : 18,
+        "name"       : "Project Retrospective",
+        "startDate"  : "2024-07-09T10:00:00",
+        "endDate"    : "2024-07-10T11:00:00",
+        "resourceId" : 2,
+        "status"     : "todo"
+      },
+      {
+        "id"         : 19,
+        "name"       : "Task Prioritization",
+        "startDate"  : "2024-07-11T12:00:00",
+        "endDate"    : "2024-07-11T18:00:00",
+        "resourceId" : 3,
+        "status"     : "todo"
+      },
+      {
+        "id"         : 20,
+        "name"       : "Vacation",
+        "startDate"  : "2024-07-12T15:00:00",
+        "endDate"    : "2024-07-15T18:00:00",
+        "resourceId" : 4,
+        "status"     : "done",
+        "label"      : "PTO"
+      }
+    ]
+  }
+}

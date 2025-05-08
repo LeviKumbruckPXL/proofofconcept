@@ -1,0 +1,15 @@
+.b-dayview-timeaxis-time{
+  color:transparent;
+}
+
+.b-title-summary{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:0.5em;
+}
+.b-title-summary:last-child{
+  margin-inline-start:1em;
+}
+
+/*# sourceMappingURL=app.css.map */

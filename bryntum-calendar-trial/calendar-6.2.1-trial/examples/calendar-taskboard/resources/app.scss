@@ -1,0 +1,587 @@
+// region global / Core styling
+body {
+    &:not(.b-theme-material) {
+        --border-radius : .4em;
+    }
+
+    &:not(.b-theme-classic-dark, .b-theme-classic, .b-theme-material) {
+        --main-color : #fff;
+
+        &, .b-popup {
+            --panel-background-color : #fff;
+        }
+    }
+
+    &.b-theme-classic-dark {
+        --main-color : #000;
+    }
+}
+
+.b-toolbar .b-button,
+.b-toolbar .b-modeselector {
+    color : inherit;
+}
+
+.b-panel.b-floating > .b-panel-header.b-dock-top, .b-panel.b-floating:not(.b-has-header) > .b-panel-body-wrap > .b-toolbar.b-dock-top {
+    border-top-left-radius  : var(--border-radius);
+    border-top-right-radius : var(--border-radius);
+}
+
+.b-eventeditor {
+    min-width : 33em!important;
+}
+
+.b-eventtip .b-tooltip-content {
+    gap : 0.75em;
+}
+
+.b-cal-tooltip-duration:before {
+    width : 21px;
+}
+
+#container > .b-container {
+    padding : 2em;
+}
+
+.b-button:not(.b-tab),
+.b-textfield,
+.b-numberfield {
+    &, * {
+        border-radius : var(--border-radius);
+    }
+}
+
+.b-splitter {
+    background : transparent;
+}
+
+.b-calendar, .b-taskboard {
+    padding       : 2em;
+    border-radius : var(--border-radius);
+}
+
+.b-panel.b-floating {
+    border-radius : var(--border-radius);
+
+    > .b-panel-body-wrap {
+        border-radius : inherit;
+    }
+}
+
+// endregion
+
+// region Task board styling
+
+.b-taskboardbase {
+    --taskboard-card-hover-transform         : null;
+    --taskboard-card-selected-transform      : null;
+    --taskboard-card-border-top-radius       : .4em;
+    --taskboard-card-border-bottom-radius    : .4em;
+    --taskboard-column-header-font-size      : 1em;
+    --taskboard-column-header-text-transform : none;
+    --taskboard-column-header-text-align     : start;
+    --taskboard-resourceavatars-avatar-size  : 1.6em;
+
+    body:not(.b-theme-classic, .b-theme-classic-dark) & {
+        --taskboard-background                 : #fff;
+        --taskboard-column-gap                 : 0;
+        --taskboard-column-background          : #fff;
+        --taskboard-column-header-background   : #fff;
+        --taskboard-card-background            : #fff;
+        --taskboard-card-hover-background      : #eee;
+        --taskboard-card-selected-background   : #ddd;
+        --taskboard-swimlane-header-background : #f3f4f566;
+        --taskboard-card-box-shadow            : 1px 1px 4px #f0f0f0;
+        --taskboard-card-border-top            : 1px solid #dedee0;
+        --taskboard-card-border-right          : 1px solid #dedee0;
+        --taskboard-card-border-bottom         : 1px solid #dedee0;
+        --taskboard-card-border-left           : 1px solid #dedee0;
+        --border-color                         : #ddd;
+    }
+
+    .b-theme-classic-dark & {
+        --taskboard-background                 : #222;
+        --taskboard-column-background          : #222;
+        --taskboard-column-header-background   : #222;
+        --border-color                         : #393939;
+        --taskboard-swimlane-header-background : #36363666;
+        --taskboard-card-border-top            : 1px solid #666;
+        --taskboard-card-border-right          : 1px solid #666;
+        --taskboard-card-border-bottom         : 1px solid #666;
+        --taskboard-card-border-left           : 1px solid #666;
+        --taskboard-card-box-shadow            : none;
+    }
+}
+
+.b-taskeditor {
+    background : var(--panel-background-color);
+
+    .b-taskeditor-content {
+        background : transparent;
+    }
+}
+
+.b-taskboard-card {
+    display        : flex;
+    flex-direction : column;
+    min-height     : 7em;
+}
+
+.b-taskboard-card-footer {
+    align-items     : flex-end;
+    justify-content : flex-end;
+    // TODO This should be in Core?
+    margin-top      : auto;
+}
+
+.time,
+.b-taskboard-card-footer .duration {
+    font-size   : .8em;
+    color       : var(--taskboard-card-footer-color);
+    white-space : nowrap;
+}
+
+.time {
+    margin-inline-start : auto;
+}
+
+.duration .b-fa {
+    margin-inline-end : .3em;
+}
+
+.title {
+    font-size      : 1.2em;
+    font-weight    : 500;
+    text-transform : none;
+    flex-shrink    : 0;
+}
+
+.b-slidetoggle {
+    height : auto;
+
+    .b-slidetoggle-label {
+        text-transform : none;
+    }
+}
+
+
+.b-taskboard-text {
+    font-size : .9em;
+}
+
+.b-theme-material {
+    .b-taskboard .b-toolbar {
+        height        : 65px;
+        border-bottom : 1px solid var(--border-color)
+    }
+}
+
+.b-taskboard-card-header .b-taskboard-text[data-ref=text] {
+    flex        : none;
+    width       : auto !important;
+    flex-shrink : 1;
+}
+
+.label {
+    font-size           : .8em;
+    background          : #3183fe;
+    color               : #fff;
+    padding             : 0.12em 0.5em;
+    border-radius       : 0.2em;
+    margin-inline-start : .4em;
+    white-space         : nowrap;
+}
+
+.PTO {
+    background-color : #27ca37;
+}
+
+.b-taskboard-resource-avatars {
+    min-height : 0;
+}
+
+.resource-tasks > * > .b-panel-content {
+    padding : 0;
+}
+
+body:not(.b-theme-classic) {
+    .b-toolbar.b-dock-top {
+        border-bottom : 0;
+        height        : 3.5em;
+
+        .b-toolbar-content {
+            padding-top : 0;
+            min-height  : 0;
+            align-items : center;
+        }
+
+        .b-button, .b-modeselector {
+            min-height : 2.5em !important;
+        }
+
+        .b-overflow-button {
+            margin-top : 0;
+        }
+    }
+
+    .resource-tasks {
+        .b-panel-body-wrap,
+        .b-toolbar {
+            background-color : transparent;
+        }
+    }
+
+    .b-taskboard-column-header-padder {
+        padding-top    : .8em;
+        padding-bottom : 0;
+    }
+}
+
+.b-column-title-text, .b-status-title {
+    display     : flex;
+    align-items : center;
+
+    &:before {
+        content           : ' ';
+        height            : .7em;
+        width             : .7em;
+        border-radius     : 50%;
+        margin-inline-end : .5em;
+    }
+}
+
+[data-column="todo"] .b-column-title-text:before,
+[data-id="group-header-todo"] .b-status-title:before {
+    background : #3183fe;
+}
+
+[data-column="in-progress"] .b-column-title-text:before,
+[data-id="group-header-in-progress"] .b-status-title:before {
+    background : #feac31;
+}
+
+[data-column="done"] .b-column-title-text:before,
+[data-id="group-header-done"] .b-status-title:before {
+    background : #27ca37;
+}
+
+.b-taskboard-taskitem.duration {
+    margin-inline-end : auto;
+    order             : -1;
+}
+
+// endregion
+
+// region Calendar styling
+.b-calendar-mode-button {
+    padding-inline : .25em .75em;
+    border         : 0;
+
+    label {
+        display : block !important;
+    }
+}
+
+.b-calendar-view-desc {
+    justify-content : center;
+    flex-shrink     : 0;
+
+    .b-calendar-view-desc-text {
+        font-size   : 1.2em;
+        font-weight : 500;
+    }
+}
+
+.b-monthview {
+
+    .b-calendar-row.b-calendar-weekdays .b-calendar-day-header,
+    .b-cal-cell-header {
+        justify-content : center;
+    }
+
+    .b-calendar-day-header {
+        text-transform     : uppercase;
+        font-size          : .8em;
+        padding-inline-end : 0 !important;
+    }
+
+    .b-cal-cell-header .b-day-num {
+        margin-inline-start : 0;
+    }
+}
+
+.b-week-num {
+    display : none !important;
+}
+
+.b-calendar .b-calendar-toolbar {
+    .b-button {
+        --button-border-opacity : 0.1;
+        text-transform          : none;
+    }
+
+    .b-cal-nav-item:not(.b-calendar-today-button) {
+        order : 4;
+    }
+
+    .b-buttongroup {
+        border-radius : var(--border-radius);
+        padding       : 2px;
+
+        .b-button {
+            border        : 0;
+            border-radius : var(--border-radius);
+        }
+    }
+}
+
+body:not(.b-theme-classic-dark, .b-theme-classic) {
+    .b-buttongroup {
+        background : #eee;
+    }
+
+    .b-calendar .b-calendar-toolbar {
+        .b-button {
+            border-color : #ccc;
+
+            &.b-pressed {
+                background : #fff;
+                color      : #4f5964;
+            }
+
+            &:not(:hover,.b-pressed) {
+                background : transparent;
+            }
+
+            &.b-hover {
+                color : #aaa;
+            }
+        }
+    }
+
+    .b-solid-bar {
+        .b-cal-event {
+            background-image : linear-gradient(#ffffffc0, #ffffffc0);
+
+            &:hover {
+                background-image : linear-gradient(#ffffff90, #ffffff90);
+            }
+        }
+    }
+}
+
+body.b-theme-classic-dark {
+    .b-calendar .b-calendar-toolbar {
+        .b-buttongroup {
+            background : #555;
+        }
+
+        .b-button {
+            border-color : #ccc;
+
+            &.b-pressed {
+                background : #888;
+                color      : #eee;
+            }
+
+            &:not(:hover,.b-pressed) {
+                background : transparent;
+                color      : #999;
+            }
+
+            &.b-hover {
+                color : #aaa;
+            }
+        }
+    }
+
+    .b-solid-bar {
+        .b-cal-event {
+            background-image : linear-gradient(#00000066, #00000066);
+
+            &:hover {
+                background-image : linear-gradient(#00000088, #00000088);
+            }
+
+            .b-cal-event-desc {
+                filter : brightness(1.5);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 1024px) {
+    #container > .b-container {
+        flex-direction : column;
+    }
+}
+
+.b-dayview-allday-row {
+    box-shadow : none;
+}
+
+.b-cal-event {
+    font-size : .9em;
+}
+
+.b-solid-bar {
+    .b-cal-event {
+        justify-content : center;
+
+        .b-cal-event-desc {
+            font-weight : 500;
+        }
+    }
+
+    .b-cal-event-body {
+        display         : flex;
+        height          : 100%;
+        align-items     : center;
+        justify-content : center;
+
+        .b-cal-event-desc {
+            padding-bottom : 0;
+        }
+    }
+}
+
+body:not(.b-theme-classic) {
+    .b-solid-bar {
+        .b-cal-event {
+            .b-cal-event-desc {
+                color : var(--cal-event-color);
+            }
+        }
+    }
+}
+
+.b-monthview .b-cal-event-bar-container .b-cal-event-wrap {
+    padding-right : .5em;
+    padding-left  : .5em;
+
+    &:not(.b-dragging-item,.b-overflow) {
+        opacity : 1;
+    }
+}
+
+.b-monthview .b-weeks-container .b-calendar-row .b-calendar-cell.b-nonworking-day {
+    background-color : transparent;
+}
+
+.b-monthview .b-calendar-row.b-calendar-weekdays .b-calendar-day-header {
+    color : #4f5964 !important;
+}
+
+.b-weekcalendar-body-wrap .b-toolbar-content {
+    padding-inline : 0;
+}
+
+.b-hovered {
+    border-color : #999;
+
+    &.b-cal-event-wrap {
+        .b-cal-event {
+            border : 1px solid var(--cal-event-color);
+        }
+    }
+}
+
+.b-monthview .b-weeks-container {
+    border-radius : var(--border-radius);
+}
+
+.b-dayview-schedule-container {
+    border-inline-start : 0;
+}
+
+.b-calendar .b-calendar-viewcontainer > .b-monthview > .b-panel-body-wrap > .b-panel-content {
+    padding-top : 1.9em;
+}
+
+// region Grid styling
+
+.b-treecombo {
+    min-height        : 2.8em !important;
+    font-size         : .9em;
+    margin-inline-end : .5em;
+}
+
+.b-grid-header-container {
+    background : transparent;
+}
+
+.b-gridbase.b-no-column-lines .b-grid-header {
+    border-right-color : transparent;
+}
+
+.b-grid-cell,
+.b-grid-header.b-depth-0 {
+    padding : 0 .25em;
+}
+
+body:not(.b-theme-classic-dark, .b-theme-classic) {
+    #container > .b-container {
+        background : #f0f0f0;
+    }
+
+    .b-calendar, .b-taskboard {
+        background : #fff;
+    }
+
+    .b-grid-cell {
+        color : #333;
+    }
+
+    .b-grid-header-container {
+        border-bottom-color : #eee;
+        box-shadow          : none;
+
+        .b-filter-bar-field .b-field-inner input::placeholder {
+            color : #222;
+        }
+    }
+}
+
+body.b-theme-classic-dark {
+    #container > .b-container {
+        background : #000;
+    }
+}
+
+.b-grid-header-text-content {
+    text-transform : none;
+}
+
+/* No special background on checkbox column */
+.b-grid-row.b-selected,
+.b-grid-cell {
+    background : transparent !important;
+}
+
+.b-chip {
+    font-size : .9em;
+}
+
+// endregion
+
+// region event editor
+body:not(.b-theme-material) {
+    .b-eventeditor,
+    .b-popup-header,
+    .b-popup > .b-panel-body-wrap > .b-bottom-toolbar {
+        background : var(--panel-background-color);
+        border     : none !important;
+    }
+}
+
+.b-overflow-button {
+    border     : 0 !important;
+    background : transparent;
+}
+
+.b-chipview input {
+    padding-top    : 0.3em;
+    padding-bottom : calc(0.2em + 1px);
+}
+
+// endregion

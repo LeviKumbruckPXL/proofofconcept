@@ -1,0 +1,18 @@
+{
+  "title": "Customized Event Editor (Vue 3)",
+  "description": "This example shows event editor customization.",
+  "source": [
+    "babel.config.js",
+    "package.json",
+    "public/data/data.json",
+    "public/data/rooms.json",
+    "public/index.html",
+    "src/App.scss",
+    "src/App.vue",
+    "src/AppConfig.js",
+    "src/lib/Room.js",
+    "src/lib/RoomSelector.js",
+    "src/main.js",
+    "vue.config.js"
+  ]
+}

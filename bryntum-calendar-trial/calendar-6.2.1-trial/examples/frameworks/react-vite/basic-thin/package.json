@@ -1,0 +1,64 @@
+{
+  "name": "basic-thin",
+  "description": "Basic setup thin demo (React + Vite)",
+  "version": "6.2.1",
+  "author": {
+    "name": "Bryntum",
+    "url": "https://bryntum.com",
+    "email": "info@bryntum.com"
+  },
+  "license": "commercial",
+  "homepage": "./",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "vite",
+    "postinstall": "postinstall"
+  },
+  "postinstall": {
+    "node_modules/@bryntum/demo-resources/images/users/*": "copy public/users/",
+    "node_modules/@bryntum/demo-resources/images/favicon.png": "copy public/favicon.png"
+  },
+  "dependencies": {
+    "@bryntum/calendar-react-thin": "6.2.1",
+    "@bryntum/calendar-thin": "npm:@bryntum/calendar-thin-trial@6.2.1",
+    "@bryntum/core-react-thin": "6.2.1",
+    "@bryntum/core-thin": "npm:@bryntum/core-thin-trial@6.2.1",
+    "@bryntum/demo-resources": "1.4.0",
+    "@bryntum/engine-thin": "npm:@bryntum/engine-thin-trial@6.2.1",
+    "@bryntum/grid-thin": "npm:@bryntum/grid-thin-trial@6.2.1",
+    "@bryntum/scheduler-thin": "npm:@bryntum/scheduler-thin-trial@6.2.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "4.3.1",
+    "postinstall": "0.7.4",
+    "sass": "1.78.0",
+    "typescript": "5.5.3",
+    "vite": "5.4.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  }
+}

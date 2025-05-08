@@ -1,0 +1,287 @@
+{
+  "success"   : true,
+  "resources" : {
+    "rows" : [
+      {
+        "id"         : 101,
+        "name"       : "Amit Johnson",
+        "image"      : "amit.jpg",
+        "eventColor" : "blue"
+      },
+      {
+        "id"         : 102,
+        "name"       : "Melissa Connor",
+        "image"      : "melissa.jpg",
+        "eventColor" : "green"
+      },
+      {
+        "id"         : 103,
+        "name"       : "James Smith",
+        "eventColor" : "red",
+        "image"      : "james.jpg"
+      },
+      {
+        "id"         : 104,
+        "name"       : "Gloria Davis",
+        "eventColor" : "purple",
+        "image"      : "gloria.jpg"
+      },
+      {
+        "id"         : 105,
+        "name"       : "Robert Brown",
+        "eventColor" : "orange",
+        "image"      : "rob.jpg"
+      },
+      {
+        "id"         : 106,
+        "name"       : "Linda Wilson",
+        "eventColor" : "teal",
+        "image"      : "linda.jpg"
+      }
+    ]
+  },
+  "events" : {
+    "rows" : [
+      {
+        "id"         : 101,
+        "startDate"  : "2025-09-01T09:00:00",
+        "endDate"    : "2025-09-01T11:00:00",
+        "name"       : "Project Kickoff",
+        "allDay"     : false,
+        "resourceId" : 101
+      },
+      {
+        "id"         : 102,
+        "startDate"  : "2025-09-01T13:00:00",
+        "endDate"    : "2025-09-01T15:00:00",
+        "name"       : "Design Review",
+        "allDay"     : false,
+        "resourceId" : 102
+      },
+      {
+        "id"         : 103,
+        "startDate"  : "2025-09-02T10:00:00",
+        "endDate"    : "2025-09-02T12:00:00",
+        "name"       : "Development Standup",
+        "allDay"     : false,
+        "resourceId" : 103
+      },
+      {
+        "id"         : 104,
+        "startDate"  : "2025-09-02T14:00:00",
+        "endDate"    : "2025-09-02T16:00:00",
+        "name"       : "Client Call",
+        "allDay"     : false,
+        "resourceId" : 104
+      },
+      {
+        "id"         : 105,
+        "startDate"  : "2025-09-03T09:30:00",
+        "endDate"    : "2025-09-03T11:30:00",
+        "name"       : "Sprint Planning",
+        "allDay"     : false,
+        "resourceId" : 105
+      },
+      {
+        "id"         : 106,
+        "startDate"  : "2025-09-03T13:30:00",
+        "endDate"    : "2025-09-03T15:30:00",
+        "name"       : "Backend Review",
+        "allDay"     : false,
+        "resourceId" : 106
+      },
+      {
+        "id"         : 107,
+        "startDate"  : "2025-09-04T10:00:00",
+        "endDate"    : "2025-09-04T12:00:00",
+        "name"       : "Frontend Sync",
+        "allDay"     : false,
+        "resourceId" : 101
+      },
+      {
+        "id"         : 108,
+        "startDate"  : "2025-09-04T14:00:00",
+        "endDate"    : "2025-09-04T16:00:00",
+        "name"       : "Marketing Strategy",
+        "allDay"     : false,
+        "resourceId" : 102
+      },
+      {
+        "id"         : 109,
+        "startDate"  : "2025-09-05T09:00:00",
+        "endDate"    : "2025-09-05T11:00:00",
+        "name"       : "Sales Meeting",
+        "allDay"     : false,
+        "resourceId" : 103
+      },
+      {
+        "id"         : 110,
+        "startDate"  : "2025-09-05T13:00:00",
+        "endDate"    : "2025-09-05T15:00:00",
+        "name"       : "Tech Demo",
+        "allDay"     : false,
+        "resourceId" : 104
+      },
+      {
+        "id"         : 111,
+        "startDate"  : "2025-09-01T16:00:00",
+        "endDate"    : "2025-09-01T17:30:00",
+        "name"       : "Legal Review",
+        "allDay"     : false,
+        "resourceId" : 105
+      },
+      {
+        "id"         : 112,
+        "startDate"  : "2025-09-02T15:00:00",
+        "endDate"    : "2025-09-02T17:00:00",
+        "name"       : "Budget Planning",
+        "allDay"     : false,
+        "resourceId" : 106
+      },
+      {
+        "id"         : 113,
+        "startDate"  : "2025-09-03T16:00:00",
+        "endDate"    : "2025-09-03T18:00:00",
+        "name"       : "Security Audit",
+        "allDay"     : false,
+        "resourceId" : 101
+      },
+      {
+        "id"         : 114,
+        "startDate"  : "2025-09-04T09:00:00",
+        "endDate"    : "2025-09-04T11:00:00",
+        "name"       : "Team Retrospective",
+        "allDay"     : false,
+        "resourceId" : 105
+      },
+      {
+        "id"         : 115,
+        "startDate"  : "2025-09-05T16:00:00",
+        "endDate"    : "2025-09-05T18:00:00",
+        "name"       : "All Hands Meeting",
+        "allDay"     : false,
+        "resourceId" : 102
+      },
+      {
+        "id"         : 116,
+        "startDate"  : "2025-09-01T11:30:00",
+        "endDate"    : "2025-09-01T13:00:00",
+        "name"       : "Product Roadmap Discussion",
+        "allDay"     : false,
+        "resourceId" : 101
+      },
+      {
+        "id"         : 117,
+        "startDate"  : "2025-09-01T15:30:00",
+        "endDate"    : "2025-09-01T17:00:00",
+        "name"       : "HR Policy Review",
+        "allDay"     : false,
+        "resourceId" : 102
+      },
+      {
+        "id"         : 118,
+        "startDate"  : "2025-09-01T08:30:00",
+        "endDate"    : "2025-09-01T10:30:00",
+        "name"       : "Technical Deep Dive",
+        "allDay"     : false,
+        "resourceId" : 102
+      },
+      {
+        "id"         : 119,
+        "startDate"  : "2025-09-01T12:30:00",
+        "endDate"    : "2025-09-01T14:00:00",
+        "name"       : "Partnership Call",
+        "allDay"     : false,
+        "resourceId" : 103
+      },
+      {
+        "id"         : 120,
+        "startDate"  : "2025-09-03T08:00:00",
+        "endDate"    : "2025-09-03T09:30:00",
+        "name"       : "Customer Feedback Session",
+        "allDay"     : false,
+        "resourceId" : 105
+      },
+      {
+        "id"         : 121,
+        "startDate"  : "2025-09-03T12:30:00",
+        "endDate"    : "2025-09-03T14:30:00",
+        "name"       : "Competitive Analysis",
+        "allDay"     : false,
+        "resourceId" : 106
+      },
+      {
+        "id"         : 122,
+        "startDate"  : "2025-09-04T12:00:00",
+        "endDate"    : "2025-09-04T14:00:00",
+        "name"       : "Client Onboarding",
+        "allDay"     : false,
+        "resourceId" : 101
+      },
+      {
+        "id"         : 123,
+        "startDate"  : "2025-09-04T16:00:00",
+        "endDate"    : "2025-09-04T17:30:00",
+        "name"       : "Infrastructure Planning",
+        "allDay"     : false,
+        "resourceId" : 102
+      },
+      {
+        "id"         : 124,
+        "startDate"  : "2025-09-05T08:00:00",
+        "endDate"    : "2025-09-05T09:30:00",
+        "name"       : "Investor Check-in",
+        "allDay"     : false,
+        "resourceId" : 103
+      },
+      {
+        "id"         : 125,
+        "startDate"  : "2025-09-05T11:30:00",
+        "endDate"    : "2025-09-05T13:00:00",
+        "name"       : "Customer Success Review",
+        "allDay"     : false,
+        "resourceId" : 104
+      },
+      {
+        "id"         : 126,
+        "startDate"  : "2025-09-01T17:30:00",
+        "endDate"    : "2025-09-01T19:00:00",
+        "name"       : "Business Expansion Plan",
+        "allDay"     : false,
+        "resourceId" : 105
+      },
+      {
+        "id"         : 127,
+        "startDate"  : "2025-09-02T17:00:00",
+        "endDate"    : "2025-09-02T18:30:00",
+        "name"       : "Product Testing Workshop",
+        "allDay"     : false,
+        "resourceId" : 106
+      },
+      {
+        "id"         : 128,
+        "startDate"  : "2025-09-03T15:00:00",
+        "endDate"    : "2025-09-03T16:30:00",
+        "name"       : "Operations Check-in",
+        "allDay"     : false,
+        "resourceId" : 101
+      },
+      {
+        "id"         : 129,
+        "startDate"  : "2025-09-04T17:30:00",
+        "endDate"    : "2025-09-04T19:00:00",
+        "name"       : "Budget Finalization",
+        "allDay"     : false,
+        "resourceId" : 105
+      },
+      {
+        "id"         : 130,
+        "startDate"  : "2025-09-05T18:30:00",
+        "endDate"    : "2025-09-05T20:00:00",
+        "name"       : "Annual Review Meeting",
+        "allDay"     : false,
+        "resourceId" : 102
+      }
+    ]
+  }
+}

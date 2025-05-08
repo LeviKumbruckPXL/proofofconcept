@@ -1,0 +1,454 @@
+{
+  "success"   : true,
+  "resources" : {
+    "rows" : [
+      {
+        "id"         : 1,
+        "name"       : "Radio 1",
+        "eventColor" : "green"
+      },
+      {
+        "id"         : 2,
+        "name"       : "Radio 2",
+        "eventColor" : "blue"
+      },
+      {
+        "id"         : 3,
+        "name"       : "Radio 3",
+        "eventColor" : "red"
+      },
+      {
+        "id"         : 4,
+        "name"       : "Radio 4",
+        "eventColor" : "orange"
+      }
+    ]
+  },
+  "events" : {
+    "rows" : [
+      {
+        "name"           : "Early Breakfast",
+        "startDate"      : "2024-03-03T05:00:00",
+        "endDate"        : "2024-03-03T06:45:00",
+        "resourceId"     : "1",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Morning News",
+        "startDate"      : "2024-03-03T6:45:00",
+        "endDate"        : "2024-03-03T07:00:00",
+        "resourceId"     : "1",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Breakfast with Greg James",
+        "startDate"      : "2024-03-03T07:00:00",
+        "endDate"        : "2024-03-03T11:00:00",
+        "resourceId"     : "1",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Rickie, Melvin and Charlie",
+        "startDate"      : "2024-03-03T11:00:00",
+        "endDate"        : "2024-03-03T12:45:00",
+        "resourceId"     : "1",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Newsbeat",
+        "startDate"      : "2024-03-03T12:45:00",
+        "endDate"        : "2024-03-03T13:00:00",
+        "resourceId"     : "1",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Matt and Mollie",
+        "startDate"      : "2024-03-03T13:00:00",
+        "endDate"        : "2024-03-03T15:30:00",
+        "resourceId"     : "1",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Newsbeat",
+        "startDate"      : "2024-03-03T15:30:00",
+        "endDate"        : "2024-03-03T15:32:00",
+        "resourceId"     : "1",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Going Home",
+        "startDate"      : "2024-03-03T15:32:00",
+        "endDate"        : "2024-03-03T17:45:00",
+        "resourceId"     : "1",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Newsbeat",
+        "startDate"      : "2024-03-03T17:45:00",
+        "endDate"        : "2024-03-03T18:00:00",
+        "resourceId"     : "1",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Radio 1's New Music",
+        "startDate"      : "2024-03-03T18:00:00",
+        "endDate"        : "2024-03-03T20:00:00",
+        "resourceId"     : "1",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Radio 1's Future Pop",
+        "startDate"      : "2024-03-03T20:00:00",
+        "endDate"        : "2024-03-03T22:00:00",
+        "resourceId"     : "1",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Radio 1's Power Down Playlist",
+        "startDate"      : "2024-03-03T22:00:00",
+        "endDate"        : "2024-03-03T23:00:00",
+        "resourceId"     : "1",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+
+      {
+        "name"           : "Owain Wyn Evans",
+        "startDate"      : "2024-03-03T04:00:00",
+        "endDate"        : "2024-03-03T06:30:00",
+        "resourceId"     : "2",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "The Zoe Ball Breakfast Show",
+        "startDate"      : "2024-03-03T06:30:00",
+        "endDate"        : "2024-03-03T9:30:00",
+        "resourceId"     : "2",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Vernon Kay",
+        "startDate"      : "2024-03-03T09:30:00",
+        "endDate"        : "2024-03-03T12:00:00",
+        "resourceId"     : "2",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Jeremy Vine",
+        "startDate"      : "2024-03-03T12:00:00",
+        "endDate"        : "2024-03-03T14:00:00",
+        "resourceId"     : "2",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Scott Mills",
+        "startDate"      : "2024-03-03T14:00:00",
+        "endDate"        : "2024-03-03T16:00:00",
+        "resourceId"     : "2",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Sara Cox",
+        "startDate"      : "2024-03-03T16:00:00",
+        "endDate"        : "2024-03-03T18:30:00",
+        "resourceId"     : "2",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Sara Cox's Half Wower",
+        "startDate"      : "2024-03-03T18:30:00",
+        "endDate"        : "2024-03-03T19:00:00",
+        "resourceId"     : "2",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Jo Whiley",
+        "startDate"      : "2024-03-03T19:00:00",
+        "endDate"        : "2024-03-03T21:00:00",
+        "resourceId"     : "2",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "The Folk Show",
+        "startDate"      : "2024-03-03T21:00:00",
+        "endDate"        : "2024-03-03T22:00:00",
+        "resourceId"     : "2",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+
+      {
+        "name"           : "Through The Night",
+        "startDate"      : "2024-03-03T00:30:00",
+        "endDate"        : "2024-03-03T06:30:00",
+        "resourceId"     : "3",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Breakfast",
+        "startDate"      : "2024-03-03T06:30:00",
+        "endDate"        : "2024-03-03T09:30:00",
+        "resourceId"     : "3",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Essential Classics",
+        "startDate"      : "2024-03-03T09:30:00",
+        "endDate"        : "2024-03-03T13:00:00",
+        "resourceId"     : "3",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Classical Live",
+        "startDate"      : "2024-03-03T13:00:00",
+        "endDate"        : "2024-03-03T15:00:00",
+        "resourceId"     : "3",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Choral Evensong",
+        "startDate"      : "2024-03-03T15:00:00",
+        "endDate"        : "2024-03-03T16:00:00",
+        "resourceId"     : "3",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Composer of the Week",
+        "startDate"      : "2024-03-03T16:00:00",
+        "endDate"        : "2024-03-03T17:00:00",
+        "resourceId"     : "3",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "In Tune",
+        "startDate"      : "2024-03-03T17:00:00",
+        "endDate"        : "2024-03-03T19:00:00",
+        "resourceId"     : "3",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Classical Mixtape",
+        "startDate"      : "2024-03-03T19:00:00",
+        "endDate"        : "2024-03-03T19:30:00",
+        "resourceId"     : "3",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Radio 3 in Concert",
+        "startDate"      : "2024-03-03T19:30:00",
+        "endDate"        : "2024-03-03T21:45:00",
+        "resourceId"     : "3",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "The Essay",
+        "startDate"      : "2024-03-03T21:45:00",
+        "endDate"        : "2024-03-03T23:00:00",
+        "resourceId"     : "3",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+
+      {
+        "name"           : "Selection of BBC World Service Programmes",
+        "startDate"      : "2024-03-03T01:00:00",
+        "endDate"        : "2024-03-03T05:20:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Shipping Forecast",
+        "startDate"      : "2024-03-03T05:20:00",
+        "endDate"        : "2024-03-03T05:30:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "News Briefing",
+        "startDate"      : "2024-03-03T05:30:00",
+        "endDate"        : "2024-03-03T05:43:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Prayer for the Day",
+        "startDate"      : "2024-03-03T05:43:00",
+        "endDate"        : "2024-03-03T05:45:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Farming today",
+        "startDate"      : "2024-03-03T05:45:00",
+        "endDate"        : "2024-03-03T06:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Today",
+        "startDate"      : "2024-03-03T06:00:00",
+        "endDate"        : "2024-03-03T09:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Sideways",
+        "startDate"      : "2024-03-03T09:00:00",
+        "endDate"        : "2024-03-03T09:30:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Things Fell Apart",
+        "startDate"      : "2024-03-03T09:30:00",
+        "endDate"        : "2024-03-03T10:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Woman's Hour",
+        "startDate"      : "2024-03-03T10:00:00",
+        "endDate"        : "2024-03-03T11:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "File on Four",
+        "startDate"      : "2024-03-03T11:00:00",
+        "endDate"        : "2024-03-03T11:45:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Drama: Child",
+        "startDate"      : "2024-03-03T11:45:00",
+        "endDate"        : "2024-03-03T12:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "News Summary",
+        "startDate"      : "2024-03-03T12:00:00",
+        "endDate"        : "2024-03-03T12:04:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "You and Yours",
+        "startDate"      : "2024-03-03T12:04:00",
+        "endDate"        : "2024-03-03T12:57:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Weather",
+        "startDate"      : "2024-03-03T12:57:00",
+        "endDate"        : "2024-03-03T13:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "World at One",
+        "startDate"      : "2024-03-03T13:00:00",
+        "endDate"        : "2024-03-03T13:45:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "The History Podcast",
+        "startDate"      : "2024-03-03T13:45:00",
+        "endDate"        : "2024-03-03T14:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "The Archers",
+        "startDate"      : "2024-03-03T14:00:00",
+        "endDate"        : "2024-03-03T14:15:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Drama on Four",
+        "startDate"      : "2024-03-03T14:15:00",
+        "endDate"        : "2024-03-03T15:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Money Box",
+        "startDate"      : "2024-03-03T15:00:00",
+        "endDate"        : "2024-03-03T15:30:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Dying for a Transplant",
+        "startDate"      : "2024-03-03T15:30:00",
+        "endDate"        : "2024-03-03T16:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "The Media Show",
+        "startDate"      : "2024-03-03T16:00:00",
+        "endDate"        : "2024-03-03T17:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "PM",
+        "startDate"      : "2024-03-03T17:00:00",
+        "endDate"        : "2024-03-03T18:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Six O'Clock News",
+        "startDate"      : "2024-03-03T18:00:00",
+        "endDate"        : "2024-03-03T18:30:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Geoff Norcott's Working Men",
+        "startDate"      : "2024-03-03T18:30:00",
+        "endDate"        : "2024-03-03T19:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "The Archers",
+        "startDate"      : "2024-03-03T19:00:00",
+        "endDate"        : "2024-03-03T19:15:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Front Row",
+        "startDate"      : "2024-03-03T19:15:00",
+        "endDate"        : "2024-03-03T20:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Moral Maze",
+        "startDate"      : "2024-03-03T20:00:00",
+        "endDate"        : "2024-03-03T21:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "The Life Scientific",
+        "startDate"      : "2024-03-03T21:00:00",
+        "endDate"        : "2024-03-03T21:30:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      },
+      {
+        "name"           : "Is Psychiatry Working?",
+        "startDate"      : "2024-03-03T21:30:00",
+        "endDate"        : "2024-03-03T22:00:00",
+        "resourceId"     : "4",
+        "recurrenceRule" : "FREQ=DAILY"
+      }
+    ]
+  }
+}

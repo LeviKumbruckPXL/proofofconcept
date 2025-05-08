@@ -1,0 +1,814 @@
+{
+  "success"  : true,
+  "projects" : {
+    "rows" : [
+      {
+        "id"   : 1,
+        "name" : "Horizon Estates",
+        "icon" : "b-fa b-fa-institution"
+      },
+      {
+        "id"   : 2,
+        "name" : "Harbor View Condos",
+        "icon" : "b-fa b-fa-hotel"
+      },
+      {
+        "id"   : 3,
+        "name" : "Apex Avenue",
+        "icon" : "b-fa b-fa-bank"
+      }
+    ]
+  },
+  "resources" : {
+    "rows" : [
+      {
+        "id"         : 1,
+        "name"       : "Angelo",
+        "image"      : "angelo.jpg",
+        "eventColor" : "#FF9800"
+      },
+      {
+        "id"         : 2,
+        "name"       : "Dave",
+        "image"      : "dave.jpg",
+        "eventColor" : "#ffc107"
+      },
+      {
+        "id"         : 3,
+        "name"       : "Hitomi",
+        "image"      : "hitomi.jpg",
+        "eventColor" : "#FFEB3B"
+      },
+      {
+        "id"         : 4,
+        "name"       : "Linda",
+        "image"      : "linda.jpg",
+        "eventColor" : "#4CAF50"
+      },
+      {
+        "id"         : 5,
+        "name"       : "Lisa",
+        "image"      : "lisa.jpg",
+        "eventColor" : "#2196F3"
+      },
+      {
+        "id"         : 6,
+        "name"       : "Macy",
+        "image"      : "macy.jpg",
+        "eventColor" : "#03A9F4"
+      },
+      {
+        "id"         : 7,
+        "name"       : "Gloria",
+        "image"      : "gloria.jpg",
+        "eventColor" : "#00BCD4"
+      },
+      {
+        "id"         : 8,
+        "name"       : "George",
+        "image"      : "george.jpg",
+        "eventColor" : "#00BCD4"
+      },
+      {
+        "id"         : 9,
+        "name"       : "Rob",
+        "image"      : "rob.jpg",
+        "eventColor" : "#00BCD4"
+      },
+      {
+        "id"         : 10,
+        "name"       : "Steve",
+        "image"      : "steve.jpg",
+        "eventColor" : "#00BCD4"
+      }
+    ]
+  },
+  "events" : {
+    "rows" : [
+      {
+        "id"        : 1,
+        "name"      : "Excavate Foundation",
+        "projectId" : 1,
+        "startDate" : "2024-07-05 08:00",
+        "endDate"   : "2024-07-05 12:00"
+      },
+      {
+        "id"        : 2,
+        "name"      : "Lay Concrete Footings",
+        "projectId" : 1,
+        "startDate" : "2024-07-10 09:30",
+        "endDate"   : "2024-07-10 13:30"
+      },
+      {
+        "id"        : 3,
+        "name"      : "Install Structural Steel",
+        "projectId" : 1,
+        "startDate" : "2024-07-11 11:00",
+        "endDate"   : "2024-07-11 15:00"
+      },
+      {
+        "id"        : 4,
+        "name"      : "Frame Exterior Walls",
+        "projectId" : 1,
+        "startDate" : "2024-07-18 10:00",
+        "endDate"   : "2024-07-18 14:00"
+      },
+      {
+        "id"        : 5,
+        "name"      : "Roof Truss Installation",
+        "projectId" : 1,
+        "startDate" : "2024-07-22 08:30",
+        "endDate"   : "2024-07-22 12:30"
+      },
+      {
+        "id"        : 6,
+        "name"      : "Electrical Rough-In",
+        "projectId" : 1,
+        "startDate" : "2024-07-25 13:00",
+        "endDate"   : "2024-07-25 17:00"
+      },
+      {
+        "id"        : 7,
+        "name"      : "Plumbing Rough-In",
+        "projectId" : 1,
+        "startDate" : "2024-07-29 14:30",
+        "endDate"   : "2024-07-29 18:30"
+      },
+      {
+        "id"        : 8,
+        "name"      : "Drywall Installation",
+        "projectId" : 1,
+        "startDate" : "2024-08-02 09:00",
+        "endDate"   : "2024-08-02 13:00"
+      },
+      {
+        "id"        : 9,
+        "name"      : "Paint Interior Walls",
+        "projectId" : 1,
+        "startDate" : "2024-08-06 11:30",
+        "endDate"   : "2024-08-06 15:30"
+      },
+      {
+        "id"        : 10,
+        "name"      : "Final Inspection",
+        "projectId" : 1,
+        "startDate" : "2024-08-10 10:30",
+        "endDate"   : "2024-08-10 14:30"
+      },
+      {
+        "id"        : 11,
+        "name"      : "Clear Site for Construction",
+        "projectId" : 2,
+        "startDate" : "2024-07-08 08:00",
+        "endDate"   : "2024-07-08 12:00"
+      },
+      {
+        "id"        : 12,
+        "name"      : "Excavate Trenches for Utilities",
+        "projectId" : 2,
+        "startDate" : "2024-07-12 09:30",
+        "endDate"   : "2024-07-12 13:30"
+      },
+      {
+        "id"        : 13,
+        "name"      : "Pour Foundation Concrete",
+        "projectId" : 2,
+        "startDate" : "2024-07-16 11:00",
+        "endDate"   : "2024-07-16 15:00"
+      },
+      {
+        "id"        : 14,
+        "name"      : "Build Structural Framework",
+        "projectId" : 2,
+        "startDate" : "2024-07-20 10:00",
+        "endDate"   : "2024-07-20 14:00"
+      },
+      {
+        "id"        : 15,
+        "name"      : "Install Roofing Materials",
+        "projectId" : 2,
+        "startDate" : "2024-07-25 08:30",
+        "endDate"   : "2024-07-25 12:30"
+      },
+      {
+        "id"        : 16,
+        "name"      : "Electrical Wiring Installation",
+        "projectId" : 2,
+        "startDate" : "2024-07-29 13:00",
+        "endDate"   : "2024-07-29 17:00"
+      },
+      {
+        "id"        : 17,
+        "name"      : "Plumbing System Installation",
+        "projectId" : 2,
+        "startDate" : "2024-08-02 14:30",
+        "endDate"   : "2024-08-02 18:30"
+      },
+      {
+        "id"        : 18,
+        "name"      : "Interior Finishing Work",
+        "projectId" : 2,
+        "startDate" : "2024-08-06 09:00",
+        "endDate"   : "2024-08-06 13:00"
+      },
+      {
+        "id"        : 19,
+        "name"      : "Exterior Painting",
+        "projectId" : 2,
+        "startDate" : "2024-08-10 11:30",
+        "endDate"   : "2024-08-10 15:30"
+      },
+      {
+        "id"        : 20,
+        "name"      : "Final Site Inspection",
+        "projectId" : 2,
+        "startDate" : "2024-08-14 10:30",
+        "endDate"   : "2024-08-14 14:30"
+      },
+      {
+        "id"        : 21,
+        "name"      : "Site Survey and Planning",
+        "projectId" : 3,
+        "startDate" : "2024-07-15 08:00",
+        "endDate"   : "2024-07-15 12:00"
+      },
+      {
+        "id"        : 22,
+        "name"      : "Excavation for Basement",
+        "projectId" : 2,
+        "startDate" : "2024-07-18 09:30",
+        "endDate"   : "2024-07-18 13:30"
+      },
+      {
+        "id"        : 23,
+        "name"      : "Foundation Piling Installation",
+        "projectId" : 3,
+        "startDate" : "2024-07-22 11:00",
+        "endDate"   : "2024-07-22 15:00"
+      },
+      {
+        "id"        : 24,
+        "name"      : "Erect Structural Steel Framework",
+        "projectId" : 2,
+        "startDate" : "2024-07-26 10:00",
+        "endDate"   : "2024-07-26 14:00"
+      },
+      {
+        "id"        : 25,
+        "name"      : "Concrete Slab Pouring",
+        "projectId" : 3,
+        "startDate" : "2024-07-30 08:30",
+        "endDate"   : "2024-07-30 12:30"
+      },
+      {
+        "id"        : 26,
+        "name"      : "Electrical Wiring and Fixture Installation",
+        "projectId" : 1,
+        "startDate" : "2024-08-03 13:00",
+        "endDate"   : "2024-08-03 17:00"
+      },
+      {
+        "id"        : 27,
+        "name"      : "Plumbing System Integration",
+        "projectId" : 2,
+        "startDate" : "2024-08-07 14:30",
+        "endDate"   : "2024-08-07 18:30"
+      },
+      {
+        "id"        : 28,
+        "name"      : "Interior Finishing Touches",
+        "projectId" : 2,
+        "startDate" : "2024-08-11 09:00",
+        "endDate"   : "2024-08-11 13:00"
+      },
+      {
+        "id"        : 29,
+        "name"      : "Exterior Landscaping",
+        "projectId" : 3,
+        "startDate" : "2024-08-15 11:30",
+        "endDate"   : "2024-08-15 15:30"
+      },
+      {
+        "id"        : 30,
+        "name"      : "Final Building Inspection",
+        "projectId" : 3,
+        "startDate" : "2024-08-19 10:30",
+        "endDate"   : "2024-08-19 14:30"
+      },
+      {
+        "id"        : 31,
+        "name"      : "Excavation",
+        "projectId" : 1,
+        "startDate" : "2024-07-02 08:00",
+        "endDate"   : "2024-07-02 14:00"
+      },
+      {
+        "id"        : 32,
+        "name"      : "Foundation Pouring",
+        "projectId" : 2,
+        "startDate" : "2024-07-12 09:30",
+        "endDate"   : "2024-07-12 13:30"
+      },
+      {
+        "id"        : 33,
+        "name"      : "Structural Framing",
+        "projectId" : 3,
+        "startDate" : "2024-07-20 07:45",
+        "endDate"   : "2024-07-20 14:45"
+      },
+      {
+        "id"        : 34,
+        "name"      : "Plumbing Rough-In",
+        "projectId" : 1,
+        "startDate" : "2024-07-15 10:00",
+        "endDate"   : "2024-07-15 15:00"
+      },
+      {
+        "id"        : 35,
+        "name"      : "Electrical Wiring",
+        "projectId" : 2,
+        "startDate" : "2024-07-18 08:30",
+        "endDate"   : "2024-07-18 14:30"
+      },
+      {
+        "id"        : 36,
+        "name"      : "HVAC Installation",
+        "projectId" : 3,
+        "startDate" : "2024-07-22 09:30",
+        "endDate"   : "2024-07-22 13:30"
+      },
+      {
+        "id"        : 37,
+        "name"      : "Drywall Installation",
+        "projectId" : 1,
+        "startDate" : "2024-07-25 11:30",
+        "endDate"   : "2024-07-25 14:30"
+      },
+      {
+        "id"        : 38,
+        "name"      : "Painting",
+        "projectId" : 2,
+        "startDate" : "2024-07-28 08:00",
+        "endDate"   : "2024-07-28 16:00"
+      },
+      {
+        "id"        : 39,
+        "name"      : "Flooring Installation",
+        "projectId" : 3,
+        "startDate" : "2024-07-31 10:45",
+        "endDate"   : "2024-07-31 16:45"
+      },
+      {
+        "id"        : 40,
+        "name"      : "Roof Installation",
+        "projectId" : 1,
+        "startDate" : "2024-07-05 13:00",
+        "endDate"   : "2024-07-05 19:00"
+      },
+      {
+        "id"        : 41,
+        "name"      : "Window Installation",
+        "projectId" : 2,
+        "startDate" : "2024-07-09 10:30",
+        "endDate"   : "2024-07-09 14:30"
+      },
+      {
+        "id"        : 42,
+        "name"      : "Siding",
+        "projectId" : 3,
+        "startDate" : "2024-07-08 12:45",
+        "endDate"   : "2024-07-08 19:45"
+      },
+      {
+        "id"        : 43,
+        "name"      : "Cabinet Installation",
+        "projectId" : 1,
+        "startDate" : "2024-07-16 08:15",
+        "endDate"   : "2024-07-16 13:15"
+      },
+      {
+        "id"        : 44,
+        "name"      : "Appliance Setup",
+        "projectId" : 2,
+        "startDate" : "2024-07-19 09:45",
+        "endDate"   : "2024-07-19 15:45"
+      },
+      {
+        "id"        : 45,
+        "name"      : "Landscaping",
+        "projectId" : 3,
+        "startDate" : "2024-07-23 08:30",
+        "endDate"   : "2024-07-23 12:30"
+      },
+      {
+        "id"        : 46,
+        "name"      : "Final Inspection",
+        "projectId" : 1,
+        "startDate" : "2024-07-26 11:30",
+        "endDate"   : "2024-07-26 14:30"
+      },
+      {
+        "id"        : 47,
+        "name"      : "Punch List",
+        "projectId" : 2,
+        "startDate" : "2024-07-29 08:45",
+        "endDate"   : "2024-07-29 16:45"
+      },
+      {
+        "id"        : 48,
+        "name"      : "Certificate of Occupancy",
+        "projectId" : 3,
+        "startDate" : "2024-07-31 14:15",
+        "endDate"   : "2024-07-31 20:15"
+      },
+      {
+        "id"        : 49,
+        "name"      : "Utilities Connection",
+        "projectId" : 1,
+        "startDate" : "2024-07-03 14:30",
+        "endDate"   : "2024-07-03 20:30"
+      },
+      {
+        "id"        : 50,
+        "name"      : "Fire Sprinkler Installation",
+        "projectId" : 2,
+        "startDate" : "2024-07-06 11:00",
+        "endDate"   : "2024-07-06 15:00"
+      },
+      {
+        "id"        : 51,
+        "name"      : "Elevator Installation",
+        "projectId" : 3,
+        "startDate" : "2024-07-09 13:15",
+        "endDate"   : "2024-07-09 20:15"
+      },
+      {
+        "id"        : 52,
+        "name"      : "Balcony Construction",
+        "projectId" : 1,
+        "startDate" : "2024-07-14 09:45",
+        "endDate"   : "2024-07-14 14:45"
+      },
+      {
+        "id"        : 53,
+        "name"      : "Security System Setup",
+        "projectId" : 2,
+        "startDate" : "2024-07-17 08:30",
+        "endDate"   : "2024-07-17 14:30"
+      },
+      {
+        "id"        : 54,
+        "name"      : "Common Area Flooring",
+        "projectId" : 3,
+        "startDate" : "2024-07-21 10:15",
+        "endDate"   : "2024-07-21 14:15"
+      },
+      {
+        "id"        : 55,
+        "name"      : "Mailroom Setup",
+        "projectId" : 1,
+        "startDate" : "2024-07-24 11:30",
+        "endDate"   : "2024-07-24 14:30"
+      },
+      {
+        "id"        : 56,
+        "name"      : "Fitness Center Construction",
+        "projectId" : 2,
+        "startDate" : "2024-07-27 09:00",
+        "endDate"   : "2024-07-27 17:00"
+      },
+      {
+        "id"        : 57,
+        "name"      : "Patio Installation",
+        "projectId" : 3,
+        "startDate" : "2024-07-30 13:45",
+        "endDate"   : "2024-07-30 19:45"
+      },
+      {
+        "id"        : 58,
+        "name"      : "Final Documentation",
+        "projectId" : 1,
+        "startDate" : "2024-07-31 15:00",
+        "endDate"   : "2024-07-31 17:00"
+      },
+      {
+        "id"        : 59,
+        "name"      : "Handover to Owners",
+        "projectId" : 2,
+        "startDate" : "2024-07-31 17:00",
+        "endDate"   : "2024-07-31 19:00"
+      },
+      {
+        "id"        : 60,
+        "name"      : "Celebration Event",
+        "projectId" : 3,
+        "startDate" : "2024-07-31 18:30",
+        "endDate"   : "2024-07-31 21:30"
+      }
+    ]
+  },
+  "assignments" : {
+    "rows" : [
+      {
+        "id"         : 1,
+        "resourceId" : 5,
+        "eventId"    : 15
+      },
+      {
+        "id"         : 2,
+        "resourceId" : 2,
+        "eventId"    : 8
+      },
+      {
+        "id"         : 3,
+        "resourceId" : 4,
+        "eventId"    : 23
+      },
+      {
+        "id"         : 4,
+        "resourceId" : 10,
+        "eventId"    : 1
+      },
+      {
+        "id"         : 5,
+        "resourceId" : 3,
+        "eventId"    : 12
+      },
+      {
+        "id"         : 6,
+        "resourceId" : 8,
+        "eventId"    : 27
+      },
+      {
+        "id"         : 7,
+        "resourceId" : 1,
+        "eventId"    : 5
+      },
+      {
+        "id"         : 8,
+        "resourceId" : 6,
+        "eventId"    : 20
+      },
+      {
+        "id"         : 9,
+        "resourceId" : 4,
+        "eventId"    : 10
+      },
+      {
+        "id"         : 10,
+        "resourceId" : 9,
+        "eventId"    : 18
+      },
+      {
+        "id"         : 11,
+        "resourceId" : 3,
+        "eventId"    : 29
+      },
+      {
+        "id"         : 12,
+        "resourceId" : 5,
+        "eventId"    : 7
+      },
+      {
+        "id"         : 13,
+        "resourceId" : 8,
+        "eventId"    : 16
+      },
+      {
+        "id"         : 14,
+        "resourceId" : 2,
+        "eventId"    : 3
+      },
+      {
+        "id"         : 15,
+        "resourceId" : 5,
+        "eventId"    : 25
+      },
+      {
+        "id"         : 16,
+        "resourceId" : 6,
+        "eventId"    : 13
+      },
+      {
+        "id"         : 17,
+        "resourceId" : 1,
+        "eventId"    : 2
+      },
+      {
+        "id"         : 18,
+        "resourceId" : 9,
+        "eventId"    : 21
+      },
+      {
+        "id"         : 19,
+        "resourceId" : 4,
+        "eventId"    : 6
+      },
+      {
+        "id"         : 20,
+        "resourceId" : 7,
+        "eventId"    : 24
+      },
+      {
+        "id"         : 21,
+        "resourceId" : 2,
+        "eventId"    : 11
+      },
+      {
+        "id"         : 22,
+        "resourceId" : 5,
+        "eventId"    : 30
+      },
+      {
+        "id"         : 23,
+        "resourceId" : 5,
+        "eventId"    : 19
+      },
+      {
+        "id"         : 24,
+        "resourceId" : 1,
+        "eventId"    : 9
+      },
+      {
+        "id"         : 25,
+        "resourceId" : 1,
+        "eventId"    : 22
+      },
+      {
+        "id"         : 26,
+        "resourceId" : 9,
+        "eventId"    : 4
+      },
+      {
+        "id"         : 27,
+        "resourceId" : 3,
+        "eventId"    : 14
+      },
+      {
+        "id"         : 28,
+        "resourceId" : 7,
+        "eventId"    : 26
+      },
+      {
+        "id"         : 29,
+        "resourceId" : 10,
+        "eventId"    : 17
+      },
+      {
+        "id"         : 30,
+        "resourceId" : 4,
+        "eventId"    : 28
+      },
+      {
+        "id"         : 31,
+        "resourceId" : 2,
+        "eventId"    : 32
+      },
+      {
+        "id"         : 32,
+        "resourceId" : 4,
+        "eventId"    : 33
+      },
+      {
+        "id"         : 33,
+        "resourceId" : 3,
+        "eventId"    : 34
+      },
+      {
+        "id"         : 34,
+        "resourceId" : 2,
+        "eventId"    : 35
+      },
+      {
+        "id"         : 35,
+        "resourceId" : 4,
+        "eventId"    : 36
+      },
+      {
+        "id"         : 36,
+        "resourceId" : 4,
+        "eventId"    : 37
+      },
+      {
+        "id"         : 37,
+        "resourceId" : 5,
+        "eventId"    : 38
+      },
+      {
+        "id"         : 38,
+        "resourceId" : 5,
+        "eventId"    : 39
+      },
+      {
+        "id"         : 39,
+        "resourceId" : 5,
+        "eventId"    : 40
+      },
+      {
+        "id"         : 40,
+        "resourceId" : 6,
+        "eventId"    : 41
+      },
+      {
+        "id"         : 41,
+        "resourceId" : 2,
+        "eventId"    : 42
+      },
+      {
+        "id"         : 42,
+        "resourceId" : 6,
+        "eventId"    : 43
+      },
+      {
+        "id"         : 43,
+        "resourceId" : 5,
+        "eventId"    : 44
+      },
+      {
+        "id"         : 44,
+        "resourceId" : 6,
+        "eventId"    : 45
+      },
+      {
+        "id"         : 45,
+        "resourceId" : 4,
+        "eventId"    : 46
+      },
+      {
+        "id"         : 46,
+        "resourceId" : 1,
+        "eventId"    : 47
+      },
+      {
+        "id"         : 47,
+        "resourceId" : 6,
+        "eventId"    : 48
+      },
+      {
+        "id"         : 48,
+        "resourceId" : 6,
+        "eventId"    : 49
+      },
+      {
+        "id"         : 49,
+        "resourceId" : 5,
+        "eventId"    : 50
+      },
+      {
+        "id"         : 50,
+        "resourceId" : 6,
+        "eventId"    : 51
+      },
+      {
+        "id"         : 51,
+        "resourceId" : 4,
+        "eventId"    : 52
+      },
+      {
+        "id"         : 52,
+        "resourceId" : 3,
+        "eventId"    : 53
+      },
+      {
+        "id"         : 53,
+        "resourceId" : 6,
+        "eventId"    : 54
+      },
+      {
+        "id"         : 54,
+        "resourceId" : 5,
+        "eventId"    : 55
+      },
+      {
+        "id"         : 55,
+        "resourceId" : 4,
+        "eventId"    : 56
+      },
+      {
+        "id"         : 56,
+        "resourceId" : 1,
+        "eventId"    : 57
+      },
+      {
+        "id"         : 57,
+        "resourceId" : 4,
+        "eventId"    : 58
+      },
+      {
+        "id"         : 58,
+        "resourceId" : 4,
+        "eventId"    : 59
+      },
+      {
+        "id"         : 59,
+        "resourceId" : 5,
+        "eventId"    : 60
+      },
+      {
+        "id"         : 60,
+        "resourceId" : 6,
+        "eventId"    : 31
+      }
+    ]
+  }
+}

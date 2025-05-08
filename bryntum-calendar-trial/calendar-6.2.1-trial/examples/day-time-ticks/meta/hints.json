@@ -1,0 +1,12 @@
+{
+  "[data-ref=\"dashedSubticks\"] input": {
+    "align": "t-b",
+    "title": "<code>dashedSubticks</code> config example",
+    "content": "The lines between minot ticks can be set to be dashed"
+  },
+  ".b-weekview .b-dayview-timeaxis-time-10": {
+    "align": "s-e",
+    "title": "<code>sixMinuteTicks</code> config example",
+    "content": "Time axis is divided into six minute ticks instead of the default five minute ticks"
+  }
+}

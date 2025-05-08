@@ -1,0 +1,22 @@
+{
+  ".b-dayresourcecalendarrow-resource-header[data-resource-id=\"2\"]": {
+    "content": "Each selected resource has its own sub column within a day"
+  },
+
+  "[data-ref=\"showAvatars\"] input[type=\"checkbox\"]": {
+    "content": "Avatars are shown in resource headers by default",
+    "align": "t33-b",
+    "maxWidth": "16em"
+  },
+
+  "[data-ref=\"viewWidth\"]": {
+    "content": "The view's <code>minResourceWidth</code> may be used to force the view to occupy adequate space",
+    "maxWidth": "16em"
+  },
+
+  "[data-ref=\"hideEmptyresources\"] input[type=\"checkbox\"]": {
+    "content": "Columns for resources with no scheduled events may be hidden",
+    "align": "t-b",
+    "maxWidth": "16em"
+  }
+}

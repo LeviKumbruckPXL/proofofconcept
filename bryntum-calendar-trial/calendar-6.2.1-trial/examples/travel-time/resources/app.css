@@ -1,0 +1,58 @@
+.resource-image{
+  width:4em;
+  height:4em;
+  border-radius:100%;
+  margin-inline-end:1em;
+}
+
+.b-eventtip{
+  min-width:30em;
+}
+.b-eventtip header{
+  display:flex;
+  align-items:center;
+}
+.b-eventtip header .resource-info{
+  display:flex;
+  flex-direction:column;
+}
+.b-eventtip header .resource-name{
+  font-size:1.3em;
+}
+.b-eventtip header .resource-role{
+  color:#bbb;
+  font-size:0.9em;
+}
+.b-eventtip .event-info{
+  display:flex;
+  margin-top:2em;
+}
+.b-eventtip .event-info strong{
+  margin:0 0 0.3em 0;
+}
+.b-eventtip .event-info strong:not(:first-child){
+  margin-top:2em;
+}
+.b-eventtip .event-details{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+.b-eventtip #eventmap{
+  flex:1;
+}
+.b-eventtip #eventmap .leaflet-control-attribution{
+  font-size:10px;
+}
+.b-eventtip i.b-icon{
+  margin-inline-end:0.5em;
+}
+.b-eventtip i.b-icon.b-fa-arrow-left, .b-eventtip i.b-icon.b-fa-arrow-right{
+  margin-inline-start:0.5em;
+}
+
+.b-tooltip .b-fa-car{
+  margin-inline-end:0.4em;
+}
+
+/*# sourceMappingURL=app.css.map */

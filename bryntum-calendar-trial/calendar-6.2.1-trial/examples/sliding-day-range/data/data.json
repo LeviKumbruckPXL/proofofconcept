@@ -1,0 +1,229 @@
+{
+  "success"   : true,
+  "resources" : {
+    "rows" : [
+      {
+        "id"         : "bryntum",
+        "name"       : "Bryntum team",
+        "eventColor" : "blue"
+      },
+      {
+        "id"         : "hotel",
+        "name"       : "Hotel Park",
+        "eventColor" : "orange"
+      },
+      {
+        "id"         : "michael",
+        "name"       : "Michael Johnson",
+        "eventColor" : "deep-orange"
+      }
+    ]
+  },
+  "events" : {
+    "rows" : [
+      {
+        "id"         : 1,
+        "startDate"  : "2024-09-02T09:00:00",
+        "endDate"    : "2024-09-02T10:00:00",
+        "name"       : "Meeting with Bryntum team",
+        "resourceId" : "bryntum"
+      },
+      {
+        "id"         : 2,
+        "startDate"  : "2024-09-02T11:00:00",
+        "endDate"    : "2024-09-02T12:30:00",
+        "name"       : "Hotel booking discussion",
+        "resourceId" : "hotel"
+      },
+      {
+        "id"         : 3,
+        "startDate"  : "2024-09-02T14:00:00",
+        "endDate"    : "2024-09-02T15:00:00",
+        "name"       : "Code review with Michael",
+        "resourceId" : "michael"
+      },
+      {
+        "id"         : 4,
+        "startDate"  : "2024-09-03T09:30:00",
+        "endDate"    : "2024-09-03T11:00:00",
+        "name"       : "Team stand-up",
+        "resourceId" : "bryntum"
+      },
+      {
+        "id"         : 5,
+        "startDate"  : "2024-09-03T12:00:00",
+        "endDate"    : "2024-09-03T13:30:00",
+        "name"       : "Lunch with Hotel partners",
+        "resourceId" : "hotel"
+      },
+      {
+        "id"         : 6,
+        "startDate"  : "2024-09-03T15:00:00",
+        "endDate"    : "2024-09-03T16:00:00",
+        "name"       : "Design discussion with Michael",
+        "resourceId" : "michael"
+      },
+      {
+        "id"         : 7,
+        "startDate"  : "2024-09-04T10:00:00",
+        "endDate"    : "2024-09-04T11:00:00",
+        "name"       : "Planning meeting",
+        "resourceId" : "bryntum"
+      },
+      {
+        "id"         : 8,
+        "startDate"  : "2024-09-04T12:30:00",
+        "endDate"    : "2024-09-04T13:30:00",
+        "name"       : "Client call - Hotel project",
+        "resourceId" : "hotel"
+      },
+      {
+        "id"         : 9,
+        "startDate"  : "2024-09-04T14:30:00",
+        "endDate"    : "2024-09-04T16:00:00",
+        "name"       : "API integration discussion",
+        "resourceId" : "michael"
+      },
+      {
+        "id"         : 10,
+        "startDate"  : "2024-09-05T09:00:00",
+        "endDate"    : "2024-09-05T10:00:00",
+        "name"       : "Project kickoff - Bryntum",
+        "resourceId" : "bryntum"
+      },
+      {
+        "id"         : 11,
+        "startDate"  : "2024-09-05T11:00:00",
+        "endDate"    : "2024-09-05T12:30:00",
+        "name"       : "Vendor meeting - Hotel",
+        "resourceId" : "hotel"
+      },
+      {
+        "id"         : 12,
+        "startDate"  : "2024-09-05T14:00:00",
+        "endDate"    : "2024-09-05T15:00:00",
+        "name"       : "DevOps discussion with Michael",
+        "resourceId" : "michael"
+      },
+      {
+        "id"         : 13,
+        "startDate"  : "2024-09-06T09:30:00",
+        "endDate"    : "2024-09-06T11:00:00",
+        "name"       : "Sprint planning",
+        "resourceId" : "bryntum"
+      },
+      {
+        "id"         : 14,
+        "startDate"  : "2024-09-06T12:00:00",
+        "endDate"    : "2024-09-06T13:00:00",
+        "name"       : "Marketing discussion - Hotel",
+        "resourceId" : "hotel"
+      },
+      {
+        "id"         : 15,
+        "startDate"  : "2024-09-06T15:00:00",
+        "endDate"    : "2024-09-06T16:30:00",
+        "name"       : "Product demo with Michael",
+        "resourceId" : "michael"
+      },
+      {
+        "id"         : 16,
+        "startDate"  : "2024-09-09T10:00:00",
+        "endDate"    : "2024-09-09T11:30:00",
+        "name"       : "Weekly sync - Bryntum",
+        "resourceId" : "bryntum"
+      },
+      {
+        "id"         : 17,
+        "startDate"  : "2024-09-09T12:30:00",
+        "endDate"    : "2024-09-09T13:30:00",
+        "name"       : "Room setup discussion - Hotel",
+        "resourceId" : "hotel"
+      },
+      {
+        "id"         : 18,
+        "startDate"  : "2024-09-09T14:30:00",
+        "endDate"    : "2024-09-09T16:00:00",
+        "name"       : "Backend architecture review",
+        "resourceId" : "michael"
+      },
+      {
+        "id"         : 19,
+        "startDate"  : "2024-09-10T09:00:00",
+        "endDate"    : "2024-09-10T10:00:00",
+        "name"       : "Client onboarding - Bryntum",
+        "resourceId" : "bryntum"
+      },
+      {
+        "id"         : 20,
+        "startDate"  : "2024-09-10T11:00:00",
+        "endDate"    : "2024-09-10T12:00:00",
+        "name"       : "Hotel check-in discussion",
+        "resourceId" : "hotel"
+      },
+      {
+        "id"         : 21,
+        "startDate"  : "2024-09-10T14:00:00",
+        "endDate"    : "2024-09-10T15:00:00",
+        "name"       : "UI/UX feedback session",
+        "resourceId" : "michael"
+      },
+      {
+        "id"         : 22,
+        "startDate"  : "2024-09-11T09:30:00",
+        "endDate"    : "2024-09-11T11:00:00",
+        "name"       : "Design review meeting",
+        "resourceId" : "bryntum"
+      },
+      {
+        "id"         : 23,
+        "startDate"  : "2024-09-11T12:00:00",
+        "endDate"    : "2024-09-11T13:30:00",
+        "name"       : "Hotel amenities discussion",
+        "resourceId" : "hotel"
+      },
+      {
+        "id"         : 24,
+        "startDate"  : "2024-09-11T15:00:00",
+        "endDate"    : "2024-09-11T16:00:00",
+        "name"       : "Dev environment setup",
+        "resourceId" : "michael"
+      },
+      {
+        "id"         : 25,
+        "startDate"  : "2024-09-12T09:00:00",
+        "endDate"    : "2024-09-12T10:00:00",
+        "name"       : "Weekly review - Bryntum",
+        "resourceId" : "bryntum"
+      },
+      {
+        "id"         : 26,
+        "startDate"  : "2024-09-12T11:30:00",
+        "endDate"    : "2024-09-12T12:30:00",
+        "name"       : "Hotel partners call",
+        "resourceId" : "hotel"
+      },
+      {
+        "id"         : 27,
+        "startDate"  : "2024-09-12T14:00:00",
+        "endDate"    : "2024-09-12T15:00:00",
+        "name"       : "QA session with Michael",
+        "resourceId" : "michael"
+      },
+      {
+        "id"         : 28,
+        "startDate"  : "2024-09-13T09:30:00",
+        "endDate"    : "2024-09-13T11:00:00",
+        "name"       : "Product roadmap discussion",
+        "resourceId" : "bryntum"
+      },
+      {
+        "id"        : 29,
+        "startDate" : "2024-09-13T12:00:00",
+        "endDate"   : "2024-09-13T13:00:00",
+        "name"      : "Marketing campaign meeting",
+        "resource"  : "bryntum"
+      }
+    ]
+  }
+}

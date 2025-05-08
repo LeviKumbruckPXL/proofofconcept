@@ -1,0 +1,15 @@
+{
+  "title": "Inline data demo (Vue 3)",
+  "description": "Shows how to bind inline data to the Vue 3 Calendar component",
+  "source": [
+    "babel.config.js",
+    "package.json",
+    "public/index.html",
+    "src/App.scss",
+    "src/App.vue",
+    "src/AppConfig.js",
+    "src/AppData.js",
+    "src/main.js",
+    "vue.config.js"
+  ]
+}

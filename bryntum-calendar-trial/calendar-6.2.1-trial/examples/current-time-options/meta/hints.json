@@ -1,0 +1,7 @@
+{
+  "[data-ref=\"timeOptions\"]": {
+    "title": "Current timeline options",
+    "content": "These options manipulate the way the current time line is shown",
+    "align": "s-e"
+  }
+}

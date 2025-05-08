@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bryntum Calendar · POC</title>
+
+  <!-- css en js rechtstreeks uit de build-map van de trial -->
+  <link rel="stylesheet" href="./bryntum-calendar-trial/calendar-6.2.1-trial/build/calendar.stockholm.css">
+
+  <style>
+    html,body{height:100%;margin:0;font-family:system-ui,sans-serif;}
+    #calendar{height:100%;}
+  </style>
+</head>
+<body>
+  <div id="calendar"></div>
+
+  <script type="module">
+    import { Calendar } from './bryntum-calendar-trial/calendar-6.2.1-trial/build/calendar.module.js';
+
+    async function init() {
+      const resp   = await fetch('events.json');      // zelfde map, dus geen CORS.
+      const raw    = await resp.json();
+      const events = raw.map(e => ({
+        id        : e.id,
+        name      : e.title,
+        startDate : new Date(e.start),
+        endDate   : new Date(e.end)
+      }));
+
+      new Calendar({
+        appendTo : 'calendar',
+        date     : new Date(),               // vandaag centreren
+        modes    : 
+        { 
+            day: true, 
+            week: true, 
+            month: true 
+        },
+        weekStartDay : 1,          // 0 = Sunday, 1 = Monday
+        events
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>

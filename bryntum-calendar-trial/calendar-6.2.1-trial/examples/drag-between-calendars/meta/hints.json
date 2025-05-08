@@ -1,0 +1,7 @@
+{
+  ".b-cal-event": {
+    "align": "t-b",
+    "title": "Drag between calendars",
+    "content": "Events can be dragged between different calendars seamlessly"
+  }
+}

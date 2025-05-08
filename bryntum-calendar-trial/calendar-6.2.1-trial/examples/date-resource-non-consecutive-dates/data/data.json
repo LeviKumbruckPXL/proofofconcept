@@ -1,0 +1,410 @@
+{
+  "success"   : true,
+  "resources" : {
+    "rows" : [
+      {
+        "id"         : 1,
+        "name"       : "Rob Bugman",
+        "eventColor" : "red",
+        "image"      : "rob.jpg"
+      },
+      {
+        "id"         : 2,
+        "name"       : "Macy Critter",
+        "eventColor" : "blue",
+        "image"      : "macy.jpg"
+      },
+      {
+        "id"         : 3,
+        "name"       : "Mark Stomper",
+        "eventColor" : "green",
+        "image"      : "mark.jpg"
+      },
+      {
+        "id"         : 4,
+        "name"       : "Dave Spiderbane",
+        "eventColor" : "yellow",
+        "image"      : "dave.jpg"
+      },
+      {
+        "id"         : 5,
+        "name"       : "Lisa Rodent",
+        "eventColor" : "purple",
+        "image"      : "lisa.jpg"
+      },
+      {
+        "id"         : 6,
+        "name"       : "Dan Vermin",
+        "eventColor" : "orange",
+        "image"      : "dan.jpg"
+      },
+      {
+        "id"         : 7,
+        "name"       : "Adam Pest",
+        "eventColor" : "brown",
+        "image"      : "adam.jpg"
+      },
+      {
+        "id"         : 8,
+        "name"       : "Barbara Mite",
+        "eventColor" : "pink",
+        "image"      : "barbara.jpg"
+      },
+      {
+        "id"         : 9,
+        "name"       : "Change Nipper",
+        "eventColor" : "cyan",
+        "image"      : "chang.jpg"
+      },
+      {
+        "id"         : 10,
+        "name"       : "Emilia Exterminator",
+        "eventColor" : "black",
+        "image"      : "emilia.jpg"
+      }
+    ]
+  },
+  "events" : {
+    "rows" : [
+      {
+        "id"         : 1,
+        "startDate"  : "2025-04-02T08:00:00",
+        "endDate"    : "2025-04-02T10:00:00",
+        "name"       : "Termite Inspection",
+        "resourceId" : 1,
+        "value"      : 200,
+        "preamble"   : "30min",
+        "clientName" : "John Doe",
+        "address"    : "123 Elm Street"
+      },
+      {
+        "id"         : 2,
+        "startDate"  : "2025-04-02T11:00:00",
+        "endDate"    : "2025-04-02T13:00:00",
+        "name"       : "Rodent Control",
+        "resourceId" : 1,
+        "value"      : 150,
+        "preamble"   : "20min",
+        "clientName" : "Jane Smith",
+        "address"    : "456 Oak Avenue"
+      },
+      {
+        "id"         : 3,
+        "startDate"  : "2025-04-08T10:00:00",
+        "endDate"    : "2025-04-08T12:00:00",
+        "name"       : "Bed Bug Treatment",
+        "resourceId" : 2,
+        "value"      : 300,
+        "preamble"   : "40min",
+        "clientName" : "Robert Johnson",
+        "address"    : "789 Pine Lane"
+      },
+      {
+        "id"         : 4,
+        "startDate"  : "2025-04-07T09:00:00",
+        "endDate"    : "2025-04-07T11:00:00",
+        "name"       : "Flea Control",
+        "resourceId" : 2,
+        "value"      : 100,
+        "preamble"   : "35min",
+        "clientName" : "Emily Davis",
+        "address"    : "101 Maple Drive"
+      },
+      {
+        "id"         : 5,
+        "startDate"  : "2025-04-08T08:00:00",
+        "endDate"    : "2025-04-08T10:00:00",
+        "name"       : "Ant Control",
+        "resourceId" : 1,
+        "value"      : 180,
+        "preamble"   : "25min",
+        "clientName" : "Michael Brown",
+        "address"    : "202 Birch Boulevard"
+      },
+      {
+        "id"         : 6,
+        "startDate"  : "2025-04-07T11:00:00",
+        "endDate"    : "2025-04-07T13:00:00",
+        "name"       : "Spider Treatment",
+        "resourceId" : 1,
+        "value"      : 220,
+        "preamble"   : "35min",
+        "clientName" : "Sarah Wilson",
+        "address"    : "303 Cedar Court"
+      },
+      {
+        "id"         : 7,
+        "startDate"  : "2025-04-04T14:00:00",
+        "endDate"    : "2025-04-04T16:00:00",
+        "name"       : "Wasp Nest Removal",
+        "resourceId" : 2,
+        "value"      : 250,
+        "preamble"   : "45min",
+        "clientName" : "David Martin",
+        "address"    : "404 Dogwood Street"
+      },
+      {
+        "id"         : 8,
+        "startDate"  : "2025-04-04T17:00:00",
+        "endDate"    : "2025-04-04T18:00:00",
+        "name"       : "Cockroach Control",
+        "resourceId" : 2,
+        "value"      : 160,
+        "preamble"   : "20min",
+        "clientName" : "Linda Thompson",
+        "address"    : "505 Redwood Road"
+      },
+      {
+        "id"         : 9,
+        "startDate"  : "2025-04-01T09:00:00",
+        "endDate"    : "2025-04-01T11:00:00",
+        "name"       : "Pest Inspection",
+        "resourceId" : 5,
+        "value"      : 200,
+        "preamble"   : "30min",
+        "clientName" : "John Doe",
+        "address"    : "123 Maple Street"
+      },
+      {
+        "id"         : 10,
+        "startDate"  : "2025-04-02T14:00:00",
+        "endDate"    : "2025-04-02T15:00:00",
+        "name"       : "Termite Treatment",
+        "resourceId" : 3,
+        "eventColor" : "red",
+        "value"      : 150,
+        "preamble"   : "35min",
+        "clientName" : "Sarah Connor",
+        "address"    : "456 Oak Avenue"
+      },
+      {
+        "id"         : 11,
+        "startDate"  : "2025-04-01T09:00:00",
+        "endDate"    : "2025-04-01T11:00:00",
+        "name"       : "Rodent Control",
+        "resourceId" : 3,
+        "value"      : 250,
+        "preamble"   : "25min",
+        "clientName" : "Michael Scott",
+        "address"    : "789 Pine Road"
+      },
+      {
+        "id"         : 12,
+        "startDate"  : "2025-04-04T08:30:00",
+        "endDate"    : "2025-04-04T11:00:00",
+        "name"       : "Bed Bug Treatment",
+        "resourceId" : 2,
+        "value"      : 300,
+        "preamble"   : "20min",
+        "clientName" : "Pam Beesly",
+        "address"    : "101 Elm Street"
+      },
+      {
+        "id"         : 13,
+        "startDate"  : "2025-04-05T15:00:00",
+        "endDate"    : "2025-04-05T17:00:00",
+        "name"       : "Cockroach Control",
+        "resourceId" : 1,
+        "value"      : 160,
+        "preamble"   : "20min",
+        "clientName" : "Linda Thompson",
+        "address"    : "505 Redwood Road"
+      },
+      {
+        "id"         : 14,
+        "startDate"  : "2025-04-06T10:00:00",
+        "endDate"    : "2025-04-06T11:00:00",
+        "name"       : "Pest Inspection",
+        "resourceId" : 4,
+        "value"      : 200,
+        "preamble"   : "30min",
+        "clientName" : "Dwight Schrute",
+        "address"    : "202 Walnut Street"
+      },
+      {
+        "id"         : 15,
+        "startDate"  : "2025-04-07T13:00:00",
+        "endDate"    : "2025-04-07T16:00:00",
+        "name"       : "Termite Treatment",
+        "resourceId" : 6,
+        "value"      : 150,
+        "preamble"   : "35min",
+        "clientName" : "Jim Halpert",
+        "address"    : "303 Cedar Avenue"
+      },
+      {
+        "id"         : 16,
+        "startDate"  : "2025-04-08T09:30:00",
+        "endDate"    : "2025-04-08T11:30:00",
+        "name"       : "Rodent Control",
+        "resourceId" : 8,
+        "value"      : 250,
+        "preamble"   : "25min",
+        "clientName" : "Stanley Hudson",
+        "address"    : "404 Birch Lane"
+      },
+      {
+        "id"         : 17,
+        "startDate"  : "2025-04-09T16:00:00",
+        "endDate"    : "2025-04-09T20:00:00",
+        "name"       : "Bed Bug Treatment",
+        "resourceId" : 9,
+        "value"      : 300,
+        "preamble"   : "20min",
+        "clientName" : "Phyllis Vance",
+        "address"    : "505 Poplar Drive"
+      },
+      {
+        "id"         : 18,
+        "startDate"  : "2025-04-10T07:00:00",
+        "endDate"    : "2025-04-10T08:00:00",
+        "name"       : "Cockroach Control",
+        "resourceId" : 10,
+        "value"      : 160,
+        "preamble"   : "20min",
+        "clientName" : "Meredith Palmer",
+        "address"    : "606 Chestnut Court"
+      },
+      {
+        "id"         : 19,
+        "startDate"  : "2025-04-11T11:30:00",
+        "endDate"    : "2025-04-11T14:30:00",
+        "name"       : "Pest Inspection",
+        "resourceId" : 1,
+        "value"      : 200,
+        "preamble"   : "30min",
+        "clientName" : "Kelly Kapoor",
+        "address"    : "707 Fir Street"
+      },
+      {
+        "id"         : 20,
+        "startDate"  : "2025-04-01T14:30:00",
+        "endDate"    : "2025-04-01T16:30:00",
+        "name"       : "Termite Treatment",
+        "value"      : 150,
+        "resourceId" : 2,
+        "eventColor" : "green",
+        "preamble"   : "35min",
+        "clientName" : "Ryan Howard",
+        "address"    : "808 Hemlock Road"
+      },
+      {
+        "id"         : 21,
+        "startDate"  : "2025-04-03T10:00:00",
+        "endDate"    : "2025-04-03T11:00:00",
+        "name"       : "Rodent Control",
+        "resourceId" : 3,
+        "value"      : 250,
+        "preamble"   : "25min",
+        "clientName" : "Oscar Martinez",
+        "address"    : "909 Sycamore Avenue"
+      },
+      {
+        "id"         : 22,
+        "startDate"  : "2025-04-05T08:30:00",
+        "endDate"    : "2025-04-05T12:30:00",
+        "name"       : "Bed Bug Treatment",
+        "resourceId" : 4,
+        "value"      : 300,
+        "preamble"   : "20min",
+        "clientName" : "Kevin Malone",
+        "address"    : "1010 Willow Drive"
+      },
+      {
+        "id"         : 23,
+        "startDate"  : "2025-04-07T12:00:00",
+        "endDate"    : "2025-04-07T15:00:00",
+        "name"       : "Cockroach Control",
+        "resourceId" : 5,
+        "value"      : 160,
+        "preamble"   : "20min",
+        "clientName" : "Angela Martin",
+        "address"    : "1111 Beech Street"
+      }
+    ]
+  },
+  "resourceTimeRanges" : {
+    "rows" : [
+      {
+        "id"         : 1,
+        "resourceId" : 2,
+        "name"       : "Lunch",
+        "cls"        : "lunch",
+        "startDate"  : "2025-04-02T12:00:00",
+        "endDate"    : "2025-04-02T13:00:00"
+      },
+      {
+        "id"         : 2,
+        "resourceId" : 2,
+        "name"       : "Lunch",
+        "cls"        : "lunch",
+        "startDate"  : "2025-04-04T12:00:00",
+        "endDate"    : "2025-04-04T13:00:00"
+      },
+      {
+        "id"         : 3,
+        "resourceId" : 2,
+        "name"       : "Lunch",
+        "cls"        : "lunch",
+        "startDate"  : "2025-04-07T12:00:00",
+        "endDate"    : "2025-04-07T13:00:00"
+      },
+      {
+        "id"         : 4,
+        "resourceId" : 2,
+        "name"       : "Lunch",
+        "cls"        : "lunch",
+        "startDate"  : "2025-04-08T13:00:00",
+        "endDate"    : "2025-04-08T14:00:00"
+      },
+      {
+        "id"         : 5,
+        "resourceId" : 3,
+        "name"       : "Lunch",
+        "cls"        : "lunch",
+        "startDate"  : "2025-04-02T12:00:00",
+        "endDate"    : "2025-04-02T12:30:00"
+      },
+      {
+        "id"         : 6,
+        "resourceId" : 3,
+        "name"       : "Lunch",
+        "cls"        : "lunch",
+        "startDate"  : "2025-04-04T11:00:00",
+        "endDate"    : "2025-04-04T12:00:00"
+      },
+      {
+        "id"         : 7,
+        "resourceId" : 3,
+        "name"       : "Lunch",
+        "cls"        : "lunch",
+        "startDate"  : "2025-04-07T11:00:00",
+        "endDate"    : "2025-04-07T12:00:00"
+      },
+      {
+        "id"         : 8,
+        "resourceId" : 3,
+        "name"       : "Lunch",
+        "cls"        : "lunch",
+        "startDate"  : "2025-04-08T11:00:00",
+        "endDate"    : "2025-04-08T12:00:00"
+      },
+      {
+        "id"         : 9,
+        "resourceId" : 2,
+        "name"       : "Lunch",
+        "cls"        : "lunch",
+        "startDate"  : "2025-04-01T12:00:00",
+        "endDate"    : "2025-04-01T13:00:00"
+      },
+      {
+        "id"         : 10,
+        "resourceId" : 3,
+        "name"       : "Lunch",
+        "cls"        : "lunch",
+        "startDate"  : "2025-04-01T13:00:00",
+        "endDate"    : "2025-04-01T14:00:00"
+      }
+    ]
+  }
+}

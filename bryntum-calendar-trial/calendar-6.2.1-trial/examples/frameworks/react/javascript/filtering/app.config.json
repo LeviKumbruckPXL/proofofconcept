@@ -1,0 +1,14 @@
+{
+  "title": "Event filtering demo (React)",
+  "description": "This demo shows how to use the React Calendar web component wrapper and Widgets and filter or highlight the calendar events.",
+  "source": [
+    "package.json",
+    "public/data/data.json",
+    "public/index.html",
+    "public/manifest.json",
+    "src/App.js",
+    "src/App.scss",
+    "src/AppConfig.js",
+    "src/index.js"
+  ]
+}

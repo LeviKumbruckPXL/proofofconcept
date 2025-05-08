@@ -1,0 +1,55 @@
+.b-sidebar .b-sidebar-content{
+  gap:0.2em;
+}
+.b-sidebar .b-sidebar-content .b-projectfilter .b-selected-icon:before{
+  font-size:150%;
+}
+
+.tooltip-property{
+  font-weight:500;
+}
+.tooltip-property:not(:first-child){
+  margin-top:1em;
+}
+
+.b-projectfilter{
+  flex-shrink:0;
+}
+.b-projectfilter .b-list-item{
+  border:0 none;
+  border-radius:0;
+  padding:0.5em;
+  padding-inline-start:0;
+}
+.b-projectfilter .b-list-item .b-fa{
+  margin-inline-end:0.5em;
+}
+.b-projectfilter .b-selected-icon{
+  visibility:visible !important;
+  margin-inline-end:0.8em;
+}
+.b-projectfilter .b-selected-icon:before{
+  content:"\f0c8";
+  opacity:0.6;
+}
+.b-projectfilter .b-selected .b-selected-icon:before{
+  content:"\f14a";
+  opacity:1;
+}
+
+.project-wrap{
+  margin-block:auto 0.5em;
+}
+.project-wrap i{
+  margin-inline-end:0.5em;
+}
+
+img.b-resource-avatar{
+  border:0;
+}
+
+.b-dayview-hourheight-level-1 .b-dayview-tick-level-1{
+  visibility:hidden;
+}
+
+/*# sourceMappingURL=app.css.map */

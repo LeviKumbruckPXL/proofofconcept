@@ -1,0 +1,5 @@
+{
+  "title": "PHP demo",
+  "description": "Demonstrates an editable Calendar with a simple PHP backend (only stores data in session, no database)",
+  "disableCodePen": true
+}

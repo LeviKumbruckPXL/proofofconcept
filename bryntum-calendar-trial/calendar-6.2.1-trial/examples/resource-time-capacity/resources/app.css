@@ -1,0 +1,26 @@
+.b-dayview-subtick{
+  font-size:70%;
+  padding:0.3em 0.9em;
+  display:grid;
+  grid-template-rows:1fr 1fr;
+  z-index:3;
+  color:#999;
+  pointer-events:none;
+}
+.b-dayview-subtick .capacity{
+  text-align:end;
+  display:grid;
+  align-content:end;
+}
+.b-dayview-subtick:not(.unused) .time{
+  visibility:hidden;
+}
+.b-dayview-subtick.overbooked .capacity{
+  color:red;
+}
+
+.b-cal-event-wrap.overbooked .b-cal-event{
+  --cal-event-color:red;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,35 @@
+// When squeezed for width, hide the Today button
+@media (max-width : 500px) {
+    [data-ref="todayButton"] {
+        display: none;
+    }
+}
+
+.b-sidebar .b-checkbox {
+    margin-inline-start : 0 !important;
+    font-size           : 88%;
+}
+
+// Produce a small, phone-like calendar on larger devices
+@media (min-width : 600px) {
+    #container {
+        display            : grid;
+        grid-template-rows : auto minmax(90%, 1fr);
+        background-color   : #999!important;
+
+        .b-screenshot & {
+            grid-template-rows : auto;
+        }
+        
+        .b-calendar {
+            height     : 700px;
+            max-height : min(700px, 90%);
+            width      : 350px;
+            place-self : center;
+        }
+
+        .b-calendar {
+            border-radius : 10px;
+        }
+    }
+}

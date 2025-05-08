@@ -1,0 +1,100 @@
+{
+  "success"   : true,
+  "resources" : {
+    "rows" : [
+      {
+        "id"         : "r1",
+        "name"       : "Celia",
+        "city"       : "Barcelona",
+        "eventColor" : "red",
+        "image"      : "celia.jpg"
+      },
+      {
+        "id"         : "r2",
+        "name"       : "Lee",
+        "city"       : "London",
+        "eventColor" : "purple",
+        "image"      : "lee.jpg"
+      },
+      {
+        "id"         : "r3",
+        "name"       : "Macy",
+        "city"       : "New York",
+        "eventColor" : "blue",
+        "image"      : "macy.jpg"
+      },
+      {
+        "id"         : "r4",
+        "name"       : "Madison",
+        "city"       : "Barcelona",
+        "eventColor" : "teal",
+        "image"      : "madison.jpg"
+      },
+      {
+        "id"         : "r5",
+        "name"       : "Rob",
+        "city"       : "Rome",
+        "eventColor" : "green",
+        "image"      : "rob.jpg"
+      },
+      {
+        "id"         : "r6",
+        "name"       : "Dave",
+        "city"       : "Barcelona",
+        "eventColor" : "magenta",
+        "image"      : "dave.jpg"
+      },
+      {
+        "id"         : "r7",
+        "name"       : "Dan",
+        "city"       : "London",
+        "eventColor" : "deep-orange",
+        "image"      : "dan.jpg"
+      }
+    ]
+  },
+  "events" : {
+    "rows" : [
+      {
+        "id"          : 1,
+        "startDate"   : "2024-05-07T10:00",
+        "endDate"     : "2024-05-07T12:00",
+        "iconCls"     : "b-fa b-fa-utensils",
+        "name"        : "Cook lunch",
+        "resourceIds" : ["r1", "r2", "r3"]
+      },
+      {
+        "id"          : 2,
+        "startDate"   : "2024-05-08T13:00",
+        "endDate"     : "2024-05-08T15:00",
+        "name"        : "Set up tent",
+        "iconCls"     : "b-fa b-fa-campground",
+        "resourceIds" : ["r1", "r4", "r5"]
+      },
+      {
+        "id"          : 3,
+        "startDate"   : "2024-05-09T8:00",
+        "endDate"     : "2024-05-09T11:00",
+        "name"        : "Get firewood",
+        "iconCls"     : "b-fa b-fa-tree",
+        "resourceIds" : ["r6", "r7"]
+      },
+      {
+        "id"          : 4,
+        "startDate"   : "2024-05-10T10:00",
+        "endDate"     : "2024-05-10T13:00",
+        "iconCls"     : "b-fa b-fa-tint",
+        "name"        : "Boil water",
+        "resourceIds" : ["r3", "r4"]
+      },
+      {
+        "id"          : 5,
+        "startDate"   : "2024-05-11T13:00",
+        "endDate"     : "2024-05-11T15:00",
+        "name"        : "Make fire",
+        "iconCls"     : "b-fa b-fa-fire-alt",
+        "resourceIds" : ["r3", "r6"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+.grouped-event {
+    --cal-event-color : none;
+
+    > .b-cal-event {
+        padding-inline-start : 1px;
+        align-items          : stretch;
+
+        > .b-cal-event-body {
+            display     : flex;
+            align-items : stretch;
+
+            > .b-cal-event-desc {
+                align-items : stretch;
+
+                > .b-cal-event-wrap {
+                    position : relative;
+
+                    > .b-cal-event {
+                        align-items    : center;
+                        color          : inherit;
+                        padding-inline : 3px;
+                    }
+                }
+            }
+        }
+    }
+}

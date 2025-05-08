@@ -1,0 +1,15 @@
+<!-- BryntumDemoHeader component is used for Bryntum example styling only and can be removed -->
+<bryntum-demo-header></bryntum-demo-header>
+
+<bryntum-calendar-project-model
+    #project
+    [events] = "projectData.events"
+    [resources] = "projectData.resources"
+></bryntum-calendar-project-model>
+
+<bryntum-calendar
+    #calendar
+    [date] = "calendarProps.date"
+    [modes] = "calendarProps.modes"
+    [project] = "project"
+></bryntum-calendar>

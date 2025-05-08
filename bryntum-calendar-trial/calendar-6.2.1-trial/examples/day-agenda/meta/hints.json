@@ -1,0 +1,5 @@
+{
+  ".b-day-agenda-hour.b-has-events[data-hour=\"12\"]": {
+    "html": "This view shows events for each day in its range in a serialized manner flowing down the column<p>Each event is sized intrinsically by its content<p>"
+  }
+}

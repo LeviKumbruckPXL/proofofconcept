@@ -1,0 +1,14 @@
+{
+  "title": "Configuring visible hours (React)",
+  "description": "This React Calendar component example shows how to define the hours to render and what hour should be scrolled to initially",
+  "source": [
+    "package.json",
+    "public/data/data.json",
+    "public/index.html",
+    "public/manifest.json",
+    "src/App.js",
+    "src/App.scss",
+    "src/components/Calendar.js",
+    "src/index.js"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  ".b-dayresourcecalendarrow-resource-header[data-resource-id=\"2\"]": {
+    "content": "Each selected resource has its own sub column within a day"
+  },
+
+  ".b-dayresourceview-column[data-date=\"2025-01-28\"] .b-dayview-subtick[data-hour=\"8\"] .capacity": {
+    "style": "margin-top:10px",
+    "align": "l-r",
+    "content": "The resource's remaining/total capacity is displayed for each hour",
+    "maxWidth": "16em"
+  }
+}

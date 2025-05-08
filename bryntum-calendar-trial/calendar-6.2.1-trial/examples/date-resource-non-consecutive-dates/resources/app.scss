@@ -1,0 +1,175 @@
+.b-short-event .b-cal-event-body .b-cal-event-desc {
+    margin-bottom : -1px;
+}
+
+.b-dayview-day-container .b-calendar-cell .b-cal-event-wrap:not(.b-short-event) .b-cal-event-body {
+    padding : .6em;
+    margin  : 0;
+
+    .b-event-header {
+        font-size : .9em;
+    }
+
+    .b-cal-event-desc {
+        font-size     : .9em;
+        order         : -1;
+        margin-bottom : 0.2em;
+        font-weight   : 500;
+    }
+}
+
+.b-calendar-body-wrap .b-panel-content {
+    background : transparent;
+}
+
+.b-sidebar {
+    .b-datepicker {
+        font-size : .9em;
+    }
+
+    .b-panel-content,
+    .b-calendarpanel .b-panel-body-wrap {
+        background : transparent;
+    }
+
+    .b-datepicker .b-toolbar-content {
+        padding-inline-start : 0.6em !important;
+    }
+
+    .b-datepicker-title {
+        justify-content : start;
+    }
+}
+
+.b-eventtip.b-eventedit .b-tooltip-content {
+    gap : .8em;
+}
+
+.b-resourcefilter li {
+    font-size : .9em;
+}
+
+.b-dayview .b-cal-timerange {
+    --timerange-color : transparent;
+    font-size         : .8em;
+
+    .b-cal-timerange-header {
+        height : 100%;
+    }
+
+    .b-cal-timerange-header-text {
+        padding       : .25em 1em;
+        border-radius : 1em;
+    }
+}
+
+.lunch .b-cal-timerange-header {
+    background : repeating-linear-gradient(135deg, #f0f0f0, #f0f0f0 4px, #fff 4px, #fff 11px);
+
+    .b-cal-timerange-header-text {
+        background : #fff;
+        border     : 1px solid #f0f0f0;
+        color      : #aaaaaa;
+    }
+
+    // lunch background in dark mode
+    .b-theme-classic-dark & {
+        background : repeating-linear-gradient(135deg, #393939, #393939 4px, #222 4px, #222 11px);
+
+        .b-cal-timerange-header-text {
+            background-color : #222;
+            border           : 1px solid #555;
+        }
+    }
+}
+
+.b-eventsummarypopup {
+    [data-ref="table"] {
+        display               : grid;
+        grid-template-columns : repeat(4, 1fr);
+        font-weight           : 500;
+        user-select           : none;
+        pointer-events        : none;
+
+        .summary-header {
+            min-width : 10em;
+            color     : #888e95;
+        }
+
+        .summary-value {
+            min-width : 10em;
+            color     : #46b1e5;
+        }
+    }
+}
+
+.b-button {
+    text-transform : none;
+}
+
+.b-dayresourcecalendarrow {
+
+    .b-dayresourcecalendarrow-resource-header {
+        padding : .75em;
+    }
+
+    .b-dayname-date {
+        flex-flow : row;
+        gap       : 0.3em;
+
+        .b-day-name-day {
+            margin         : 0;
+            font-size      : 1.1em;
+            text-transform : uppercase;
+        }
+
+        .b-day-name-date {
+            margin    : 0;
+            font-size : 1.1em;
+        }
+    }
+}
+
+.b-dayresourcecalendarrow.b-hide-allday-header .b-cal-cell-header,
+.b-dayresourcecalendarrow .b-cal-cell-header {
+    padding-top : 0;
+}
+
+.b-dayresourceview {
+    .b-day-column-header-cell {
+        padding : 0;
+    }
+
+    .b-dayresourcecalendarrow-resource-info {
+        display               : grid;
+        grid-template-columns : 1fr 1fr;
+        gap                   : .2em;
+        flex                  : 1;
+        font-size             : .8em;
+        font-weight           : 400;
+        margin-top            : 1em;
+
+        &:not(:last-of-type) {
+            border-inline-end : 1px solid #ddd;
+        }
+    }
+
+    .value {
+        text-align : end;
+    }
+}
+
+// Address rendering in event block
+.b-address-ct {
+    margin-block : auto .25em;
+    font-weight  : 400;
+    font-size    : .8em;
+
+    .b-short-event & {
+        display : none;
+    }
+
+    i {
+        margin-inline-end : .5em;
+    }
+}

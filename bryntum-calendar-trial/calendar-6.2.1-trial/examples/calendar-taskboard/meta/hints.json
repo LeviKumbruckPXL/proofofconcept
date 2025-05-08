@@ -1,0 +1,12 @@
+{
+  ".b-monthview .b-cal-event": {
+    "title": "Hover an event",
+    "content": "And the corresponding task in the TaskBoard is highlighted",
+    "align": "t-b"
+  },
+  ".b-taskboard-card": {
+    "title": "Data shared with the Calendar",
+    "content": "Calendar and Task Board are both connected to the same <code>project</code>. Please note, the TaskBoard widget is licensed separately.",
+    "align": "l-r"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Basic setup demo (Vue 3)",
+  "description": "This example shows the Bryntum Calendar web component integrated with Vue 3",
+  "source": [
+    "babel.config.js",
+    "package.json",
+    "public/data/busy.json",
+    "public/data/data.json",
+    "public/index.html",
+    "src/App.scss",
+    "src/App.vue",
+    "src/AppConfig.js",
+    "src/main.js",
+    "vue.config.js"
+  ]
+}

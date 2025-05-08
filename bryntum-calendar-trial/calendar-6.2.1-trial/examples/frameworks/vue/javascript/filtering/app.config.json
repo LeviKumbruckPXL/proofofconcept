@@ -1,0 +1,15 @@
+{
+  "title": "Event filtering demo (Vue 2)",
+  "description": "Shows how to implement filtering of events using Bryntum Calendar integrated into Vue framework.",
+  "source": [
+    "babel.config.js",
+    "package.json",
+    "public/data/data.json",
+    "public/index.html",
+    "src/App.scss",
+    "src/App.vue",
+    "src/AppConfig.js",
+    "src/main.js",
+    "vue.config.js"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "List view demo (React + Vite)",
+  "description": "This example demonstrates the 'list' view type",
+  "source": [
+    "index.html",
+    "package.json",
+    "public/data/busy.json",
+    "src/App.tsx",
+    "src/AppConfig.tsx",
+    "src/lib/AppEventModel.ts",
+    "src/main.tsx",
+    "tsconfig.json",
+    "vite.config.ts"
+  ]
+}

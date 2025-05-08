@@ -1,0 +1,33 @@
+<!-- BryntumDemoHeader component is used for Bryntum example styling only and can be removed -->
+<bryntum-demo-header></bryntum-demo-header>
+
+<bryntum-calendar-project-model
+    #project
+    [events]="projectProps.events!"
+    [resources]="projectProps.resources!"
+></bryntum-calendar-project-model>
+
+<div class="container">
+    <bryntum-calendar
+        #calendar
+        [date]="calendarProps.date!"
+        [modes]="calendarProps.modes!"
+        [project]="project"
+        [externalEventSourceFeature]="calendarProps.externalEventSourceFeature!"
+        [eventTooltipFeature]="calendarProps.eventTooltipFeature!"
+    ></bryntum-calendar>
+    <bryntum-splitter></bryntum-splitter>
+    <bryntum-grid
+        [id]="gridProps.id!"
+        [title]="gridProps.title!"
+        [collapsible]="gridProps.collapsible!"
+        [flex]="gridProps.flex!"
+        [ui]="gridProps.ui!"
+        [store]="gridProps.store!"
+        [columns]="gridProps.columns!"
+        [sortFeature]="gridProps.sortFeature!"
+        [stripeFeature]="gridProps.stripeFeature!"
+        [cellEditFeature]="gridProps.cellEditFeature!"
+        [groupFeature]="gridProps.groupFeature!"
+    ></bryntum-grid>
+</div>

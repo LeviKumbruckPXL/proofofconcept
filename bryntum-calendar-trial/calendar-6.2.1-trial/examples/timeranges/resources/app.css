@@ -1,0 +1,40 @@
+.custom-styles .hatch-large .b-cal-timerange-body{
+  background:repeating-linear-gradient(-55deg, rgba(221, 221, 221, 0.5019607843), rgba(221, 221, 221, 0.5019607843) 10px, rgba(238, 238, 238, 0.5019607843) 5px, rgba(238, 238, 238, 0.5019607843) 20px);
+}
+.b-theme-classic-dark .custom-styles .hatch-large .b-cal-timerange-body{
+  background:repeating-linear-gradient(-55deg, rgba(68, 68, 68, 0.5019607843), rgba(68, 68, 68, 0.5019607843) 10px, rgba(85, 85, 85, 0.5019607843) 5px, rgba(85, 85, 85, 0.5019607843) 20px);
+}
+.custom-styles .hatch-small .b-cal-timerange-body{
+  background-image:linear-gradient(-45deg, rgba(0, 0, 0, 0) 46%, #e03218 49%, #e03218 51%, rgba(0, 0, 0, 0) 55%);
+  background-size:6px 6px;
+}
+.b-theme-classic-dark .custom-styles .hatch-small .b-cal-timerange-body{
+  background-image:linear-gradient(-45deg, rgba(0, 0, 0, 0) 46%, #903218 49%, #903218 51%, rgba(0, 0, 0, 0) 55%);
+}
+.custom-styles .b-cal-timerange-line.my-time-range{
+  overflow:visible;
+  z-index:3;
+}
+.custom-styles .b-cal-timerange-line.my-time-range::before{
+  background-color:var(--timerange-color);
+  color:#fff;
+  content:attr(data-content);
+  padding:1px 8px 2px;
+  height:22px;
+  position:absolute;
+}
+.custom-styles .start-line{
+  --timerange-color:#4ebb52;
+}
+.custom-styles .start-line::before{
+  border-radius:6px 6px 0 0;
+}
+.custom-styles .end-line{
+  --timerange-color:#f76262;
+}
+.custom-styles .end-line::before{
+  border-radius:0 0 6px 6px;
+  top:calc(100% - 2px);
+}
+
+/*# sourceMappingURL=app.css.map */

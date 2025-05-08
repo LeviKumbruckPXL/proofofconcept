@@ -1,0 +1,15 @@
+.b-dayview-timeaxis-time {
+    color : transparent;
+}
+
+.b-title-summary {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    gap             : .5em;
+
+    &:last-child {
+        margin-inline-start: 1em;
+    }
+}
+

@@ -1,0 +1,15 @@
+{
+  "title": "TimeRanges demo (React + Vite)",
+  "description": "Shows how to use the TimeRanges feature to add vertical zones to the calendar",
+  "source": [
+    "index.html",
+    "package.json",
+    "public/data/data.json",
+    "src/App.scss",
+    "src/App.tsx",
+    "src/AppConfig.tsx",
+    "src/main.tsx",
+    "tsconfig.json",
+    "vite.config.ts"
+  ]
+}

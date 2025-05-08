@@ -1,0 +1,10 @@
+.b-dayview-day-container .b-calendar-cell .b-cal-event{
+  border-radius:10px;
+  border:1px solid color-mix(in srgb, var(--cal-event-color), #fff 50%);
+}
+.b-dayview-day-container .b-calendar-cell .b-cal-event .b-cal-event-body{
+  gap:0.1em;
+  margin-inline-start:0;
+}
+
+/*# sourceMappingURL=app.css.map */

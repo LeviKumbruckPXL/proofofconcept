@@ -1,0 +1,126 @@
+{
+  "success"   : true,
+  "resources" : {
+    "rows" : [
+      {
+        "id"         : "bryntum",
+        "name"       : "Bryntum team",
+        "eventColor" : "blue"
+      },
+      {
+        "id"         : "hotel",
+        "name"       : "Hotel Park",
+        "eventColor" : "orange"
+      },
+      {
+        "id"         : "michael",
+        "name"       : "Michael Johnson",
+        "eventColor" : "deep-orange"
+      }
+    ]
+  },
+  "events" : {
+    "rows" : [
+      {
+        "id"         : 1,
+        "startDate"  : "2024-01-08T09:00:00",
+        "endDate"    : "2024-01-08T11:00:00",
+        "name"       : "Team Meeting",
+        "allDay"     : false,
+        "resourceId" : "bryntum",
+        "readOnly"   : true
+      },
+      {
+        "id"         : 2,
+        "startDate"  : "2024-01-08T14:00:00",
+        "endDate"    : "2024-01-08T16:00:00",
+        "name"       : "Client Presentation",
+        "allDay"     : false,
+        "resourceId" : "hotel"
+      },
+      {
+        "id"         : 3,
+        "startDate"  : "2024-01-09T10:30:00",
+        "endDate"    : "2024-01-09T12:30:00",
+        "name"       : "Project Planning",
+        "allDay"     : false,
+        "resourceId" : "michael"
+      },
+      {
+        "id"         : 4,
+        "startDate"  : "2024-01-09T15:30:00",
+        "endDate"    : "2024-01-09T17:30:00",
+        "name"       : "Training Workshop",
+        "allDay"     : false,
+        "resourceId" : "bryntum",
+        "readOnly"   : true
+      },
+      {
+        "id"         : 5,
+        "startDate"  : "2024-01-10T11:00:00",
+        "endDate"    : "2024-01-10T13:00:00",
+        "name"       : "Lunch and Learn",
+        "allDay"     : false,
+        "resourceId" : "hotel"
+      },
+      {
+        "id"         : 6,
+        "startDate"  : "2024-01-10T14:30:00",
+        "endDate"    : "2024-01-10T16:30:00",
+        "name"       : "Team Building Exercise",
+        "allDay"     : false,
+        "resourceId" : "michael"
+      },
+      {
+        "id"         : 7,
+        "startDate"  : "2024-01-11T09:30:00",
+        "endDate"    : "2024-01-11T11:30:00",
+        "name"       : "Project Review",
+        "allDay"     : false,
+        "resourceId" : "bryntum",
+        "readOnly"   : true
+      },
+      {
+        "id"         : 8,
+        "startDate"  : "2024-01-11T14:00:00",
+        "endDate"    : "2024-01-11T16:00:00",
+        "name"       : "Coffee Break",
+        "allDay"     : false,
+        "resourceId" : "hotel"
+      },
+      {
+        "id"         : 9,
+        "startDate"  : "2024-01-12T10:00:00",
+        "endDate"    : "2024-01-12T12:00:00",
+        "name"       : "Task Assignment",
+        "allDay"     : false,
+        "resourceId" : "michael"
+      },
+      {
+        "id"         : 10,
+        "startDate"  : "2024-01-12T15:30:00",
+        "endDate"    : "2024-01-12T17:30:00",
+        "name"       : "Weekly Review",
+        "allDay"     : false,
+        "resourceId" : "bryntum",
+        "readOnly"   : true
+      },
+      {
+        "id"         : 11,
+        "startDate"  : "2024-01-13T13:00:00",
+        "endDate"    : "2024-01-13T15:00:00",
+        "name"       : "Workshop X",
+        "allDay"     : false,
+        "resourceId" : "hotel"
+      },
+      {
+        "id"         : 12,
+        "startDate"  : "2024-01-13T16:00:00",
+        "endDate"    : "2024-01-13T18:00:00",
+        "name"       : "Team Bonding",
+        "allDay"     : false,
+        "resourceId" : "michael"
+      }
+    ]
+  }
+}

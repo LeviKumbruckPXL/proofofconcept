@@ -1,0 +1,4 @@
+{
+  "title": "Event group demo",
+  "description": "This example illustrates how to change the <code>cellData</code> event payload to create a customized 'grouped' event record for use by a custom <code>evenRenderer</code>."
+}

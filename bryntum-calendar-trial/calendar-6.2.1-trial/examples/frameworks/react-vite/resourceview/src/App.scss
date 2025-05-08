@@ -1,0 +1,25 @@
+@import '@bryntum/demo-resources/scss/example.scss';
+
+.b-resourceview-resource .b-fa-times {
+    color : inherit;
+}
+
+.b-resource-location {
+    .location {
+        display         : flex;
+        flex-direction  : column;
+        font-weight     : bold;
+        font-size       : 0.8em;
+        justify-content : center;
+        align-items     : flex-start;
+    }
+
+    .city {
+        margin-bottom : 0.2em;
+    }
+
+    .weather {
+        font-size         : 1.7em;
+        margin-inline-end : 0.4em;
+    }
+}

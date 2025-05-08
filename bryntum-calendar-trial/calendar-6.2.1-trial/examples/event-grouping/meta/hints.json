@@ -1,0 +1,5 @@
+{
+  ".grouped-event .b-cal-event[data-btip]": {
+    "html": "\"Delivery\" events have been hoisted out of the cell flow and grouped at the top of cells"
+  }
+}

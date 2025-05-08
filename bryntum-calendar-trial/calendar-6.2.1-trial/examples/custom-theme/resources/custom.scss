@@ -1,0 +1,60 @@
+$custom-highlight-color    : #f47536;
+
+// Calendar specific vars
+$calendar-foreground-color : #ff9762;
+$calendar-border-color     : #b28b4c73;
+
+$panel-background-color    : #077288;
+
+// Scheduler specific vars
+$event-color-green         : #ed9e1f;
+$event-color-blue          : #1447a0;
+
+// Base vars
+$red                       : #e95718;
+$blue                      : #086072;
+
+// This path will need to be adjusted if your project structure is different
+$fa-font-path              : '../../../build/fonts';
+
+// Extend the classic theme
+@import '../../../resources/sass/themes/classic.scss';
+
+// Override the theme-info rule with our theme info
+.b-theme-info:before {
+    content : '{"name":"Custom"}';
+}
+
+.b-button {
+  color : $white;
+}
+
+// DEMO SPECIFIC, NOT PART OF THE THEME
+
+// Font, grid and widgets inherits whatever is used
+body {
+  font-family      : "Helvetica Neue", Helvetica, Arial, sans-serif;
+  visibility       : visible;
+  background-color : #888;
+}
+
+// Give demo header in another color
+.demo-header {
+  background-color        : $custom-highlight-color;
+  border-top-left-radius  : 4px;
+  border-top-right-radius : 4px;
+}
+
+//  Some padding
+div#container {
+  padding    : 3em;
+  // Other demos have strict height settings, we want to be sure padding is applied
+  width      : auto !important;
+  height     : auto !important;
+  min-height : auto;
+}
+
+// Fix - the background turns black on full screen
+html {
+  background-color : #888;
+}

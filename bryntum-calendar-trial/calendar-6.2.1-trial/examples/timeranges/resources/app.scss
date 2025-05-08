@@ -1,0 +1,55 @@
+.custom-styles {
+    .hatch-large {
+        .b-cal-timerange-body {
+            background: repeating-linear-gradient(-55deg, #dddddd80, #dddddd80 10px, #eeeeee80 5px, #eeeeee80 20px);
+        }
+
+        .b-theme-classic-dark & {
+            .b-cal-timerange-body {
+                background: repeating-linear-gradient(-55deg, #44444480, #44444480 10px, #55555580 5px, #55555580 20px);
+            }
+        }
+    }
+
+    .hatch-small {
+        .b-cal-timerange-body {
+            background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 46%, #e03218 49%, #e03218 51%, rgba(0, 0, 0, 0) 55%);
+            background-size: 6px 6px;
+        }
+
+        .b-theme-classic-dark & {
+            .b-cal-timerange-body {
+                background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 46%, #903218 49%, #903218 51%, rgba(0, 0, 0, 0) 55%);
+            }
+        }
+    }
+
+    .b-cal-timerange-line.my-time-range {
+        overflow  : visible;
+        z-index   : 3;
+
+        &::before {
+            background-color : var(--timerange-color);
+            color            : #fff;
+            content          : attr(data-content);
+            padding          : 1px 8px 2px;
+            height           : 22px;
+            position         : absolute;
+        }
+    }
+
+    .start-line {
+        --timerange-color : #4ebb52;
+        &::before {
+            border-radius : 6px 6px 0 0;
+        }
+    }
+
+    .end-line {
+        --timerange-color : #f76262;
+        &::before {
+            border-radius : 0 0 6px 6px;
+            top           : calc(100% - 2px);
+        }
+    }
+}

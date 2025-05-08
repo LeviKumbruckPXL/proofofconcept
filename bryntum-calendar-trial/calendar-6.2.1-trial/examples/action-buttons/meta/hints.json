@@ -1,0 +1,9 @@
+{
+  "[data-event-id=\"9\"] button": {
+    "content": "<code>actionButtons</code> Configured in the DayViews",
+    "align": "t-b"
+  },
+  "[data-event-id=\"1\"]": {
+    "content": "<code>actionButtons</code> mutated for read-olny events in <code>eventRenderer</code>"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "[data-ref=\"projects\"] .b-list-title": {
+    "title": "Filter by project",
+    "content": "Filtering in this list will trigger subsequent filtering of the resource store and event store to only show project-related data",
+    "align": "b-t"
+  }
+}

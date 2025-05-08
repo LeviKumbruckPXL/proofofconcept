@@ -1,0 +1,17 @@
+{
+  "title": "Customized Event Editor (React)",
+  "description": "This example shows event editor customization.",
+  "source": [
+    "package.json",
+    "public/data/data.json",
+    "public/data/rooms.json",
+    "public/index.html",
+    "public/manifest.json",
+    "src/App.js",
+    "src/App.scss",
+    "src/AppConfig.js",
+    "src/index.js",
+    "src/lib/Room.js",
+    "src/lib/RoomSelector.js"
+  ]
+}

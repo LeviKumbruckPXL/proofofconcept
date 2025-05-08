@@ -1,0 +1,21 @@
+// AgendaView, to override Grids rule
+.b-grid-row .b-cal-event-wrap,
+// Others
+.b-cal-event-wrap {
+    transition : opacity 0.4s;
+}
+
+.b-highlighting {
+    .b-cal-event-wrap {
+        opacity : 0.2;
+
+        &.b-match {
+            opacity : 1;
+            z-index : 10;
+        }
+    }
+}
+
+.b-checkbox > .b-field-inner {
+    flex : 1 1 100%;
+}

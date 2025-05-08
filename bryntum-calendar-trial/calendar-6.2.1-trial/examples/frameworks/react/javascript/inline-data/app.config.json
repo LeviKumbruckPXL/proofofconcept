@@ -1,0 +1,14 @@
+{
+  "title": "Inline data demo (React)",
+  "description": "Shows how to bind inline data to the React Calendar component",
+  "source": [
+    "package.json",
+    "public/index.html",
+    "public/manifest.json",
+    "src/App.js",
+    "src/App.scss",
+    "src/AppConfig.js",
+    "src/AppData.js",
+    "src/index.js"
+  ]
+}

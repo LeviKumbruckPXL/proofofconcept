@@ -1,0 +1,24 @@
+.grouped-event{
+  --cal-event-color:none;
+}
+.grouped-event > .b-cal-event{
+  padding-inline-start:1px;
+  align-items:stretch;
+}
+.grouped-event > .b-cal-event > .b-cal-event-body{
+  display:flex;
+  align-items:stretch;
+}
+.grouped-event > .b-cal-event > .b-cal-event-body > .b-cal-event-desc{
+  align-items:stretch;
+}
+.grouped-event > .b-cal-event > .b-cal-event-body > .b-cal-event-desc > .b-cal-event-wrap{
+  position:relative;
+}
+.grouped-event > .b-cal-event > .b-cal-event-body > .b-cal-event-desc > .b-cal-event-wrap > .b-cal-event{
+  align-items:center;
+  color:inherit;
+  padding-inline:3px;
+}
+
+/*# sourceMappingURL=app.css.map */

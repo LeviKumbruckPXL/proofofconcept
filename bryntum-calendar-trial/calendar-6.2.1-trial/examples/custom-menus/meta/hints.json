@@ -1,0 +1,11 @@
+{
+  ".b-cal-event-wrap[data-event-id=\"23\"]": {
+    "content": "Right-click this to see the event context menu"
+  },
+  ".b-dayview-day-detail[data-date=\"2020-10-15\"]": {
+    "content": "Right-click unoccupied schedule space to see the schedule context menu",
+    "align": {
+      "align": "r50-l30"
+    }
+  }
+}

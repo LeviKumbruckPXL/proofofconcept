@@ -1,0 +1,257 @@
+{
+  "success"   : true,
+  "resources" : {
+    "rows" : [
+      {
+        "id"         : 1,
+        "name"       : "Alice Johnson",
+        "eventColor" : "red"
+      },
+      {
+        "id"         : 2,
+        "name"       : "Bob Smith",
+        "eventColor" : "orange"
+      },
+      {
+        "id"         : 3,
+        "name"       : "Charlie Brown",
+        "eventColor" : "green"
+      },
+      {
+        "id"         : 4,
+        "name"       : "Dana White",
+        "eventColor" : "blue"
+      },
+      {
+        "id"         : 5,
+        "name"       : "Eli Green",
+        "eventColor" : "violet"
+      },
+      {
+        "id"         : 6,
+        "name"       : "Fiona Black",
+        "eventColor" : "deep-orange"
+      }
+    ]
+  },
+  "events" : {
+    "rows" : [
+      {
+        "name"       : "Project Kickoff Meeting",
+        "startDate"  : "2024-05-27T08:00:00",
+        "endDate"    : "2024-05-27T08:45:00",
+        "resourceId" : 1
+      },
+      {
+        "name"       : "Design Review",
+        "startDate"  : "2024-05-27T09:45:00",
+        "endDate"    : "2024-05-27T10:30:00",
+        "resourceId" : 2
+      },
+      {
+        "name"       : "Client A Check-in",
+        "startDate"  : "2024-05-27T10:30:00",
+        "endDate"    : "2024-05-27T11:00:00",
+        "resourceId" : 3
+      },
+      {
+        "name"       : "Lunch with Team",
+        "startDate"  : "2024-05-27T11:00:00",
+        "endDate"    : "2024-05-27T12:00:00",
+        "resourceId" : 4
+      },
+      {
+        "name"       : "Marketing Strategy Session",
+        "startDate"  : "2024-05-27T12:00:00",
+        "endDate"    : "2024-05-27T12:45:00",
+        "resourceId" : 5
+      },
+      {
+        "name"       : "Development Sync-up",
+        "startDate"  : "2024-05-27T12:45:00",
+        "endDate"    : "2024-05-27T13:30:00",
+        "resourceId" : 6
+      },
+      {
+        "name"       : "Weekly Wrap-up",
+        "startDate"  : "2024-05-27T13:30:00",
+        "endDate"    : "2024-05-27T14:15:00",
+        "resourceId" : 1
+      },
+      {
+        "name"       : "User Feedback Session",
+        "startDate"  : "2024-05-28T09:00:00",
+        "endDate"    : "2024-05-28T09:45:00",
+        "resourceId" : 2
+      },
+      {
+        "name"       : "Financial Review",
+        "startDate"  : "2024-05-28T09:45:00",
+        "endDate"    : "2024-05-28T10:30:00",
+        "resourceId" : 3
+      },
+      {
+        "name"       : "Client B Meeting",
+        "startDate"  : "2024-05-28T10:00:00",
+        "endDate"    : "2024-05-28T11:15:00",
+        "resourceId" : 4
+      },
+      {
+        "name"       : "Product Brainstorm",
+        "startDate"  : "2024-05-28T10:30:00",
+        "endDate"    : "2024-05-28T12:00:00",
+        "resourceId" : 5
+      },
+      {
+        "name"       : "Tech Support Call",
+        "startDate"  : "2024-05-28T12:00:00",
+        "endDate"    : "2024-05-28T12:45:00",
+        "resourceId" : 6
+      },
+      {
+        "name"       : "Project Planning",
+        "startDate"  : "2024-05-28T12:45:00",
+        "endDate"    : "2024-05-28T13:30:00",
+        "resourceId" : 1
+      },
+      {
+        "name"       : "Team Building Activity",
+        "startDate"  : "2024-05-28T13:30:00",
+        "endDate"    : "2024-05-28T14:15:00",
+        "resourceId" : 2
+      },
+      {
+        "name"       : "Client C Presentation",
+        "startDate"  : "2024-05-29T09:00:00",
+        "endDate"    : "2024-05-29T09:45:00",
+        "resourceId" : 3
+      },
+      {
+        "name"       : "Operations Review",
+        "startDate"  : "2024-05-29T09:45:00",
+        "endDate"    : "2024-05-29T10:30:00",
+        "resourceId" : 4
+      },
+      {
+        "name"       : "Development Update",
+        "startDate"  : "2024-05-29T10:30:00",
+        "endDate"    : "2024-05-29T11:00:00",
+        "resourceId" : 5
+      },
+      {
+        "name"       : "Lunch with Client D",
+        "startDate"  : "2024-05-29T11:00:00",
+        "endDate"    : "2024-05-29T12:00:00",
+        "resourceId" : 6
+      },
+      {
+        "name"       : "Market Analysis",
+        "startDate"  : "2024-05-29T12:00:00",
+        "endDate"    : "2024-05-29T12:45:00",
+        "resourceId" : 1
+      },
+      {
+        "name"       : "HR Training",
+        "startDate"  : "2024-05-29T12:45:00",
+        "endDate"    : "2024-05-29T13:30:00",
+        "resourceId" : 2
+      },
+      {
+        "name"       : "Sales Update",
+        "startDate"  : "2024-05-29T13:30:00",
+        "endDate"    : "2024-05-29T14:15:00",
+        "resourceId" : 3
+      },
+      {
+        "name"       : "Technical Demo",
+        "startDate"  : "2024-05-30T09:00:00",
+        "endDate"    : "2024-05-30T09:45:00",
+        "resourceId" : 4
+      },
+      {
+        "name"       : "Customer Review",
+        "startDate"  : "2024-05-30T09:45:00",
+        "endDate"    : "2024-05-30T10:30:00",
+        "resourceId" : 5
+      },
+      {
+        "name"       : "Client E Discussion",
+        "startDate"  : "2024-05-30T10:30:00",
+        "endDate"    : "2024-05-30T11:15:00",
+        "resourceId" : 6
+      },
+      {
+        "name"       : "Team Lunch",
+        "startDate"  : "2024-05-30T11:15:00",
+        "endDate"    : "2024-05-30T12:00:00",
+        "resourceId" : 1
+      },
+      {
+        "name"       : "Quarterly Planning",
+        "startDate"  : "2024-05-30T12:00:00",
+        "endDate"    : "2024-05-30T12:45:00",
+        "resourceId" : 2
+      },
+      {
+        "name"       : "Stakeholder Meeting",
+        "startDate"  : "2024-05-30T13:30:00",
+        "endDate"    : "2024-05-30T14:30:00",
+        "resourceId" : 3
+      },
+      {
+        "name"       : "End-of-Day Recap",
+        "startDate"  : "2024-05-30T13:30:00",
+        "endDate"    : "2024-05-30T14:00:00",
+        "resourceId" : 4
+      },
+      {
+        "name"       : "Product Launch",
+        "startDate"  : "2024-05-31T09:00:00",
+        "endDate"    : "2024-05-31T09:45:00",
+        "resourceId" : 5
+      },
+      {
+        "name"       : "Marketing Review",
+        "startDate"  : "2024-05-31T09:45:00",
+        "endDate"    : "2024-05-31T10:30:00",
+        "resourceId" : 6
+      },
+      {
+        "name"       : "Client F Call",
+        "startDate"  : "2024-05-31T11:00:00",
+        "endDate"    : "2024-05-31T11:15:00",
+        "resourceId" : 1
+      },
+      {
+        "name"       : "Team Brainstorming",
+        "startDate"  : "2024-05-31T11:00:00",
+        "endDate"    : "2024-05-31T12:00:00",
+        "resourceId" : 2
+      },
+      {
+        "name"       : "Client G Follow-up",
+        "startDate"  : "2024-05-31T12:00:00",
+        "endDate"    : "2024-05-31T12:30:00",
+        "resourceId" : 3
+      },
+      {
+        "name"       : "Performance Review",
+        "startDate"  : "2024-05-31T12:30:00",
+        "endDate"    : "2024-05-31T13:15:00",
+        "resourceId" : 4
+      },
+      {
+        "name"       : "End-of-Week Wrap-up",
+        "startDate"  : "2024-05-31T13:15:00",
+        "endDate"    : "2024-05-31T14:00:00",
+        "resourceId" : 5
+      },
+      {
+        "name"       : "Happy Hour",
+        "startDate"  : "2024-05-31T14:00:00",
+        "endDate"    : "2024-05-31T15:00:00",
+        "resourceId" : 6
+      }
+    ]
+  }
+}

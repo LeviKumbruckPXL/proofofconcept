@@ -1,0 +1,64 @@
+{
+  "defaults": {
+    "modal": true
+  },
+  "hints": [{
+    "target": "[data-ref=\"multiDaysShowButton\"]",
+    "align": {
+      "align": "t100-b100",
+      "offset": [0, -6]
+    },
+    "title": "Custom mode",
+    "content": "A custom view has been created and added as one of the available modes"
+  }, {
+    "target": ".b-day-column-header-cell[data-sync-id=\"2020-10-14\"]",
+    "align": "t-b",
+    "content": "WeekView has a <code>columnHeaderRenderer</code> which adds a custom header to day columns."
+  }, {
+    "target": "[data-event-id=\"6\"] .b-event-image",
+    "align": "l-r",
+    "title": "Custom event renderer in DayView",
+    "content": "Event content and event icon customized"
+  }, {
+    "target": ".b-dayview-day-detail[data-date=\"2020-10-14\"]",
+    "align": "r0-l30",
+    "title": "Custom dayCellRenderer in DayView",
+    "content": "The day CSS has been modified to make it appear as a non-working day"
+  }, {
+    "target": ".b-cal-cell-header[data-header-date=\"2020-10-14\"]",
+    "align": "t100-b100",
+    "title": "Custom dayHeaderRenderer in DayView",
+    "content": "The day header content is augmented"
+  }, {
+    "target": "[data-ref=\"datePicker\"]",
+    "align": "t-b",
+    "content": "<code>datePicker.showEvents</code> config set to <code>'dots'</code>"
+  },
+  {
+    "target": "[data-ref=\"monthShowButton\"]",
+    "align": "r100-l100",
+    "title": "Month mode has customizations too",
+    "nextAction": {
+      "click": "[data-ref=\"monthShowButton\"]"
+    }
+  },
+  {
+    "target": ".b-monthview [data-week=\"2020,41\"] .b-week-number-cell",
+    "align": "r-l",
+    "content": "Month mode has a week renderer which makes a more descriptive week column.",
+    "previousAction": {
+      "click": "[data-ref=\"weekShowButton\"]",
+      "waitFor": ".b-weekview"
+    }
+  },
+  {
+    "target": ".b-monthview .b-cal-event-wrap[data-event-id=\"5\"] .b-cal-event",
+    "align": "t-b",
+    "content": "Month mode's CSS has been customized to display event bars with a similar appearance to event blocks in DayView."
+  },
+  {
+    "target": ".b-cal-cell-overflow?",
+    "align": "t-b",
+    "content": "It also shows its cell overflow popup centered over the cell instead of below it."
+  }]
+}

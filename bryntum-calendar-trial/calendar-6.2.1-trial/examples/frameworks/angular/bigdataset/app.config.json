@@ -1,0 +1,20 @@
+{
+  "title": "Big dataset demo (Angular)",
+  "description": "This example shows the Calendar loading with lots and lots of events and resources.",
+  "source": [
+    "angular.json",
+    "package.json",
+    "src/app/app.component.html",
+    "src/app/app.component.scss",
+    "src/app/app.component.ts",
+    "src/app/app.config.ts",
+    "src/app/app.module.ts",
+    "src/assets/data/data.json",
+    "src/index.html",
+    "src/main.ts",
+    "src/styles.scss",
+    "tsconfig.app.json",
+    "tsconfig.json",
+    "tsconfig.spec.json"
+  ]
+}

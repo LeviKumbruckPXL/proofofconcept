@@ -1,0 +1,14 @@
+{
+  "title": "Undo/Redo demo (React)",
+  "description": "This demo shows undo / redo functionality one can use in an application using standard State Tracking Manager facility.",
+  "source": [
+    "package.json",
+    "public/data/data.json",
+    "public/index.html",
+    "public/manifest.json",
+    "src/App.js",
+    "src/App.scss",
+    "src/AppConfig.js",
+    "src/index.js"
+  ]
+}
