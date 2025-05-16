@@ -20,6 +20,12 @@
 <body>
   <div id="calendar"></div>
 
+  <p style="text-align:center">
+    <button id="bulkBtn" class="fc-button fc-button-primary">
+      Voeg 50 afspraken toe
+    </button>
+  </p>
+
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js"></script>
   <script>
     async function init() {
@@ -27,7 +33,7 @@
       const data = await response.json();
 
       const calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
-        initialView: "dayGridMonth",
+        initialView: "timeGridWeek",
         headerToolbar: {
           start: "prev,next today",
           center: "title",
@@ -40,6 +46,105 @@
     }
 
     init();
+
+  //Extra voor responstijd te meten
+  // 1.  Meet-hulpjes
+  function markStart(name) { 
+    performance.mark(`${name}-start`); 
+  }
+
+  function markEnd(name){ 
+    performance.mark(`${name}-end`);   
+  }
+
+  function logMeasure(name) {
+    performance.measure(name, `${name}-start`, `${name}-end`);
+    const dur = performance.getEntriesByName(name).pop().duration.toFixed(1);
+    console.log(`${name}: ${dur} ms`);
+  }
+
+  // 2.  Scenario 1 – 50 afspraken
+  function addBulkAppointments(calendar) {          // ← nieuwe naam
+  markStart('bulk-add');
+  calendar.batchRendering(() => {
+    const base = new Date();
+    for (let i = 0; i < 50; i++) {
+      calendar.addEvent({
+        title: `Bulk #${i + 1}`,
+        start: new Date(base.getTime() + i * 3_600_000),
+        end:   new Date(base.getTime() + (i * 3_600_000) + 1_800_000)
+      });
+    }
+  });
+}
+
+
+
+  // 3.  Scenario 2 – Weergave-switch
+  let awaitingViewSwitch = false;
+  function onToolbarClick(e) {
+    if (e.target.closest('.fc-button')) {
+      markStart('view-switch');
+      awaitingViewSwitch = true;
+    }
+  }
+
+  // 4.  Kalender initialiseren
+  async function init() {
+    const response = await fetch("events.json");
+    const data = await response.json();
+
+    const calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
+      initialView: "timeGridWeek",
+      headerToolbar: {
+        start: "prev,next today",
+        center: "title",
+        end: "dayGridMonth,timeGridWeek,timeGridDay"
+      },
+      events: data,
+      editable : true,
+
+      /* ---- hooks voor de metingen ---- */
+      eventsSet() {                 // scenario 1: bulk-insert klaar
+        requestAnimationFrame(() => {
+          if (performance.getEntriesByName('bulk-add-start').length &&
+              !performance.getEntriesByName('bulk-add').length) {
+            markEnd('bulk-add');
+            logMeasure('bulk-add');
+          }
+        });
+      },
+
+      datesSet() {                  // scenario 2: view klaar
+        if (awaitingViewSwitch) {
+          requestAnimationFrame(() => {
+            markEnd('view-switch');
+            logMeasure('view-switch');
+            awaitingViewSwitch = false;
+          });
+        }
+      }
+    });
+
+    calendar.render();
+
+    /* koppel test-helpers aan window zodat ik ze vanuit de console kan aanroepen */
+    window.calendar          = calendar;
+    window.add50Appointments = () => addBulkAppointments(calendar);
+
+    document
+        .getElementById('bulkBtn')
+        .addEventListener('click', () => addBulkAppointments(calendar))
+
+  }
+
+  /* ----------------------------- *
+   * 5.  Globale luisteraar voor knoppen-clicks (scenario 2)
+   * ----------------------------- */
+  document.addEventListener('click', onToolbarClick, true);
+
+  init();
+
   </script>
 </body>
 </html>

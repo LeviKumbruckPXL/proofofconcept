@@ -4,23 +4,74 @@
   <meta charset="utf-8">
   <title>Bryntum Calendar · POC</title>
 
-  <!-- css en js rechtstreeks uit de build-map van de trial -->
-  <link rel="stylesheet" href="./bryntum-calendar-trial/calendar-6.2.1-trial/build/calendar.stockholm.css">
+  <!-- stijl en thema uit de trial-build -->
+  <link rel="stylesheet"
+        href="./bryntum-calendar-trial/calendar-6.2.1-trial/build/calendar.stockholm.css">
 
   <style>
-    html,body{height:100%;margin:0;font-family:system-ui,sans-serif;}
-    #calendar{height:100%;}
+    html,body   {height:100%;margin:0;font-family:system-ui,sans-serif;}
+    #calendar   {height:calc(100% - 3rem);}           /* ruimte voor knop */
+    #bulkBtn    {
+      display:block;margin:.5rem auto;padding:.5rem 1.2rem;cursor:pointer;
+      font:inherit;border:1px solid #888;border-radius:.25rem;
+    }
   </style>
 </head>
 <body>
+
   <div id="calendar"></div>
+  <button id="bulkBtn">Voeg 50 afspraken toe</button>
 
   <script type="module">
-    import { Calendar } from './bryntum-calendar-trial/calendar-6.2.1-trial/build/calendar.module.js';
+    import { Calendar } from
+      './bryntum-calendar-trial/calendar-6.2.1-trial/build/calendar.module.js';
 
-    async function init() {
-      const resp   = await fetch('events.json');      // zelfde map, dus geen CORS.
-      const raw    = await resp.json();
+    /* ───────────────────────── helpers ───────────────────────── */
+    function markStart(name){ performance.mark(`${name}-start`); }
+    function markEnd(name){   performance.mark(`${name}-end`);   }
+    function logMeasure(name){
+      performance.measure(name,`${name}-start`,`${name}-end`);
+      const dur = performance.getEntriesByName(name).pop().duration.toFixed(1);
+      console.log(`${name}: ${dur} ms`);
+    }
+
+    /* ────────────── Scenario 1  –  50 afspraken ────────────── */
+    function addBulkAppointments(cal){
+      markStart('bulk-add');
+
+      const base   = new Date();
+      const events = [];
+      for(let i = 0; i < 50; i++){
+        events.push({
+          name      : `Bulk #${i + 1}`,
+          startDate : new Date(base.getTime() + i * 3_600_000),          // elk uur
+          endDate   : new Date(base.getTime() + i * 3_600_000 + 1_800_000)
+        });
+      }
+
+      cal.eventStore.add(events);                   // één batch-update
+      cal.project.commitAsync().then(() =>          // wacht tot data & DOM klaar
+        requestAnimationFrame(() => {
+          markEnd('bulk-add');
+          logMeasure('bulk-add');
+        })
+      );
+    }
+
+    /* ────────────── Scenario 2 – view-switch ─────────────── */
+    let awaitingViewSwitch = false;
+    function onToolbarClick(e){
+      if(e.target.closest('.b-button')){            // alle Bryntum-knoppen
+        markStart('view-switch');
+        awaitingViewSwitch = true;
+      }
+    }
+
+    /* ─────────────────────── init ──────────────────────── */
+    async function init(){
+      const resp = await fetch('events.json');
+      const raw  = await resp.json();
+
       const events = raw.map(e => ({
         id        : e.id,
         name      : e.title,
@@ -28,20 +79,36 @@
         endDate   : new Date(e.end)
       }));
 
-      new Calendar({
-        appendTo : 'calendar',
-        date     : new Date(),               // vandaag centreren
-        modes    : 
-        { 
-            day: true, 
-            week: true, 
-            month: true 
-        },
-        weekStartDay : 1,          // 0 = Sunday, 1 = Monday
-        events
+      const calendar = new Calendar({
+        appendTo     : 'calendar',
+        transitionDuration : 0,            // geen animatie maar is nogsteeds traag
+        date         : new Date(),              // vandaag
+        weekStartDay : 1,                       // maandag = 1
+        modes        : { day : true, week : true, month : true },
+        events,
+        
+        listeners : {
+          // na het wisselen van Card-view (Day/Week/Month)
+          activeItemChange(){
+            if(awaitingViewSwitch){
+              requestAnimationFrame(() => {
+                markEnd('view-switch');
+                logMeasure('view-switch');
+                awaitingViewSwitch = false;
+              });
+            }
+          }
+        }
       });
+
+      /* console-hulpjes + knop */
+      window.calendar          = calendar;
+      window.add50Appointments = () => addBulkAppointments(calendar);
+      document.getElementById('bulkBtn')
+              .addEventListener('click', () => addBulkAppointments(calendar));
     }
 
+    document.addEventListener('click', onToolbarClick, true);   // view-switch start-mark
     init();
   </script>
 </body>
